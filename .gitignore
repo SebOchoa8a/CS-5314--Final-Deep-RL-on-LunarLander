@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# ML artifacts
+*.pt
+*.pth
+*.ckpt
+runs/
+wandb/
+tensorboard_logs/
+experiments/results/*.csv
+experiments/results/*.pkl
+
+# Keep the results folder structure
+!experiments/results/.gitkeep
