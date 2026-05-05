@@ -1,6 +1,4 @@
-gymnasium[box2d]>=0.29
-torch>=2.0
-numpy
-matplotlib
-pyyaml
-tqdm
+gymnasium[box2d]>=0.29.0
+torch>=2.0.0
+numpy>=1.24.0
+matplotlib>=3.7.0
