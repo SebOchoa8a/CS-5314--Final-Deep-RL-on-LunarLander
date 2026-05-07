@@ -1,0 +1,1023 @@
+=== Extensions ablation: 9 runs ===
+
+[1/9] RUN  double_icm seed=0
+
+=== Run: double_icm_seed0 ===
+  Double DQN:         True
+  Prioritized Replay: False
+  ICM (curiosity):    True
+  Reward shaping:     False
+
+  Device: cpu
+  Ep   10 | R  -247.7 | Avg100  -190.3 | Eps 0.980 | Loss 2.2069 | r_int   0.16 | t=0s
+  Ep   20 | R  -242.4 | Avg100  -167.6 | Eps 0.960 | Loss 2.3588 | r_int   0.44 | t=1s
+  Ep   30 | R   -72.1 | Avg100  -173.3 | Eps 0.941 | Loss 1.9435 | r_int   5.26 | t=1s
+  Ep   40 | R  -111.4 | Avg100  -168.3 | Eps 0.921 | Loss 1.7903 | r_int   0.98 | t=2s
+  Ep   50 | R  -156.3 | Avg100  -160.1 | Eps 0.901 | Loss 2.2132 | r_int   1.58 | t=2s
+  Ep   60 | R  -194.9 | Avg100  -159.1 | Eps 0.881 | Loss 1.3316 | r_int  12.32 | t=2s
+  Ep   70 | R  -119.1 | Avg100  -165.9 | Eps 0.861 | Loss 1.2388 | r_int   2.57 | t=3s
+  Ep   80 | R  -183.8 | Avg100  -165.4 | Eps 0.842 | Loss 1.5015 | r_int   6.68 | t=3s
+  Ep   90 | R  -100.0 | Avg100  -167.7 | Eps 0.822 | Loss 1.4603 | r_int   4.54 | t=4s
+  Ep  100 | R  -105.5 | Avg100  -167.9 | Eps 0.802 | Loss 1.2504 | r_int   7.67 | t=4s
+  Ep  110 | R   -23.2 | Avg100  -164.2 | Eps 0.782 | Loss 1.1633 | r_int   6.97 | t=5s
+  Ep  120 | R   -72.4 | Avg100  -160.9 | Eps 0.762 | Loss 1.4595 | r_int   1.79 | t=5s
+  Ep  130 | R  -131.4 | Avg100  -152.6 | Eps 0.743 | Loss 1.6633 | r_int   2.97 | t=6s
+  Ep  140 | R   -72.2 | Avg100  -144.2 | Eps 0.723 | Loss 0.9480 | r_int   6.65 | t=6s
+  Ep  150 | R  -120.6 | Avg100  -142.5 | Eps 0.703 | Loss 1.5615 | r_int   6.23 | t=7s
+  Ep  160 | R   -39.9 | Avg100  -136.9 | Eps 0.683 | Loss 1.4288 | r_int   1.96 | t=7s
+  Ep  170 | R    -3.3 | Avg100  -124.5 | Eps 0.663 | Loss 1.3248 | r_int   1.48 | t=8s
+  Ep  180 | R   -92.6 | Avg100  -117.3 | Eps 0.644 | Loss 1.5118 | r_int   4.05 | t=9s
+  Ep  190 | R   -30.1 | Avg100  -107.5 | Eps 0.624 | Loss 1.7497 | r_int   4.33 | t=9s
+  Ep  200 | R  -245.8 | Avg100   -97.7 | Eps 0.604 | Loss 1.4602 | r_int   9.48 | t=10s
+  Ep  210 | R   -81.8 | Avg100   -88.9 | Eps 0.584 | Loss 1.4907 | r_int   4.72 | t=11s
+  Ep  220 | R    26.2 | Avg100   -85.4 | Eps 0.564 | Loss 1.2695 | r_int   7.51 | t=12s
+  Ep  230 | R   -68.5 | Avg100   -80.1 | Eps 0.545 | Loss 1.4236 | r_int   4.41 | t=13s
+  Ep  240 | R  -163.7 | Avg100   -79.8 | Eps 0.525 | Loss 1.3036 | r_int   7.42 | t=13s
+  Ep  250 | R   -49.8 | Avg100   -75.4 | Eps 0.505 | Loss 1.5984 | r_int   8.20 | t=14s
+  Ep  260 | R    13.2 | Avg100   -67.3 | Eps 0.485 | Loss 1.5099 | r_int  94.90 | t=15s
+  Ep  270 | R     4.9 | Avg100   -59.2 | Eps 0.465 | Loss 1.5840 | r_int   4.10 | t=17s
+  Ep  280 | R   -17.8 | Avg100   -54.5 | Eps 0.446 | Loss 1.5258 | r_int   1.45 | t=18s
+  Ep  290 | R    -9.4 | Avg100   -50.0 | Eps 0.426 | Loss 1.4270 | r_int   4.30 | t=20s
+  Ep  300 | R    -3.4 | Avg100   -42.0 | Eps 0.406 | Loss 1.4126 | r_int   2.12 | t=22s
+  Ep  310 | R   105.4 | Avg100   -35.6 | Eps 0.386 | Loss 1.4772 | r_int  44.93 | t=25s
+  Ep  320 | R   -66.5 | Avg100   -30.1 | Eps 0.366 | Loss 1.3381 | r_int   8.94 | t=29s
+  Ep  330 | R    -6.4 | Avg100   -24.0 | Eps 0.347 | Loss 1.3750 | r_int   1.38 | t=33s
+  Ep  340 | R   -30.9 | Avg100   -18.7 | Eps 0.327 | Loss 1.2466 | r_int   0.81 | t=36s
+  Ep  350 | R    26.0 | Avg100   -14.6 | Eps 0.307 | Loss 1.3644 | r_int   3.53 | t=40s
+  Ep  360 | R  -112.6 | Avg100   -18.4 | Eps 0.287 | Loss 1.2793 | r_int   0.75 | t=43s
+  Ep  370 | R    54.9 | Avg100   -23.5 | Eps 0.267 | Loss 1.1394 | r_int  33.15 | t=47s
+  Ep  380 | R    59.1 | Avg100   -22.4 | Eps 0.248 | Loss 1.1141 | r_int  52.77 | t=50s
+  Ep  390 | R   -20.1 | Avg100   -22.8 | Eps 0.228 | Loss 1.0040 | r_int  17.59 | t=53s
+  Ep  400 | R   -85.2 | Avg100   -27.4 | Eps 0.208 | Loss 0.8157 | r_int   1.08 | t=57s
+  Ep  410 | R    10.7 | Avg100   -30.7 | Eps 0.188 | Loss 0.7697 | r_int  12.79 | t=61s
+  Ep  420 | R     3.0 | Avg100   -39.5 | Eps 0.168 | Loss 0.6900 | r_int  12.91 | t=65s
+  Ep  430 | R    79.3 | Avg100   -40.3 | Eps 0.149 | Loss 0.6762 | r_int  27.83 | t=69s
+  Ep  440 | R   -15.2 | Avg100   -39.7 | Eps 0.129 | Loss 0.6359 | r_int   1.03 | t=72s
+  Ep  450 | R   -11.8 | Avg100   -32.8 | Eps 0.109 | Loss 0.6170 | r_int  16.01 | t=77s
+  Ep  460 | R    23.7 | Avg100   -29.8 | Eps 0.089 | Loss 0.5697 | r_int  14.84 | t=81s
+  Ep  470 | R   154.1 | Avg100   -11.0 | Eps 0.069 | Loss 0.5698 | r_int   3.77 | t=84s
+  Ep  480 | R   -19.6 | Avg100     2.3 | Eps 0.050 | Loss 0.5763 | r_int   1.63 | t=87s
+  Ep  490 | R   213.0 | Avg100    16.0 | Eps 0.030 | Loss 0.5014 | r_int   3.21 | t=90s
+  Ep  500 | R   195.9 | Avg100    29.6 | Eps 0.010 | Loss 0.5518 | r_int   3.24 | t=93s
+  Ep  510 | R   201.9 | Avg100    39.2 | Eps 0.010 | Loss 0.4758 | r_int   8.86 | t=96s
+  Ep  520 | R   -71.4 | Avg100    55.6 | Eps 0.010 | Loss 0.4816 | r_int   1.78 | t=100s
+  Ep  530 | R   266.5 | Avg100    57.8 | Eps 0.010 | Loss 0.5032 | r_int   2.66 | t=104s
+  Ep  540 | R   -43.1 | Avg100    60.2 | Eps 0.010 | Loss 0.5164 | r_int   2.03 | t=108s
+  Ep  550 | R   239.8 | Avg100    64.9 | Eps 0.010 | Loss 0.4831 | r_int   1.86 | t=112s
+  Ep  560 | R   -30.0 | Avg100    73.5 | Eps 0.010 | Loss 0.4123 | r_int   7.86 | t=115s
+  Ep  570 | R   171.4 | Avg100    74.5 | Eps 0.010 | Loss 0.3452 | r_int   2.28 | t=118s
+  Ep  580 | R   -38.5 | Avg100    71.5 | Eps 0.010 | Loss 0.3930 | r_int   2.21 | t=122s
+  Ep  590 | R   262.8 | Avg100    76.5 | Eps 0.010 | Loss 0.3347 | r_int   3.34 | t=126s
+  Ep  600 | R   201.6 | Avg100    77.2 | Eps 0.010 | Loss 0.3998 | r_int   9.86 | t=128s
+  Ep  610 | R   239.3 | Avg100    86.0 | Eps 0.010 | Loss 0.3629 | r_int   2.31 | t=132s
+  Ep  620 | R   159.9 | Avg100    97.7 | Eps 0.010 | Loss 0.3728 | r_int   3.93 | t=134s
+  Ep  630 | R   -22.8 | Avg100   106.7 | Eps 0.010 | Loss 0.3335 | r_int   2.79 | t=138s
+  Ep  640 | R   234.3 | Avg100   126.9 | Eps 0.010 | Loss 0.3129 | r_int  10.16 | t=140s
+  Ep  650 | R   270.1 | Avg100   134.3 | Eps 0.010 | Loss 0.3497 | r_int   3.82 | t=143s
+  Ep  660 | R   256.9 | Avg100   148.3 | Eps 0.010 | Loss 0.3319 | r_int  10.53 | t=145s
+  Ep  670 | R    17.6 | Avg100   147.4 | Eps 0.010 | Loss 0.3448 | r_int   3.62 | t=148s
+  Ep  680 | R   242.7 | Avg100   155.3 | Eps 0.010 | Loss 0.3299 | r_int   2.58 | t=151s
+  Ep  690 | R   293.7 | Avg100   160.0 | Eps 0.010 | Loss 0.2829 | r_int   2.99 | t=154s
+  Ep  700 | R   243.3 | Avg100   169.9 | Eps 0.010 | Loss 0.3498 | r_int   7.21 | t=156s
+  Ep  710 | R   255.4 | Avg100   171.2 | Eps 0.010 | Loss 0.3826 | r_int   3.21 | t=159s
+  Ep  720 | R   207.1 | Avg100   170.7 | Eps 0.010 | Loss 0.3220 | r_int  19.89 | t=162s
+  Ep  730 | R   238.3 | Avg100   177.0 | Eps 0.010 | Loss 0.3599 | r_int   3.54 | t=165s
+  Ep  740 | R   218.0 | Avg100   175.5 | Eps 0.010 | Loss 0.2974 | r_int   7.25 | t=168s
+  Ep  750 | R   261.0 | Avg100   179.0 | Eps 0.010 | Loss 0.3896 | r_int   3.92 | t=170s
+  Ep  760 | R   215.8 | Avg100   173.2 | Eps 0.010 | Loss 0.3700 | r_int   5.12 | t=173s
+  Ep  770 | R   -18.0 | Avg100   174.1 | Eps 0.010 | Loss 0.3764 | r_int   5.24 | t=176s
+  Ep  780 | R   203.3 | Avg100   178.7 | Eps 0.010 | Loss 0.2875 | r_int  16.23 | t=179s
+  Ep  790 | R   190.1 | Avg100   184.0 | Eps 0.010 | Loss 0.3719 | r_int   5.48 | t=181s
+  Ep  800 | R   216.5 | Avg100   187.2 | Eps 0.010 | Loss 0.3506 | r_int   7.68 | t=183s
+  Ep  810 | R   204.1 | Avg100   194.3 | Eps 0.010 | Loss 0.3526 | r_int   7.14 | t=185s
+  Ep  820 | R   234.7 | Avg100   199.9 | Eps 0.010 | Loss 0.2931 | r_int   5.17 | t=187s
+  Ep  830 | R   209.8 | Avg100   203.6 | Eps 0.010 | Loss 0.3839 | r_int   7.86 | t=190s
+  Ep  840 | R   233.1 | Avg100   207.4 | Eps 0.010 | Loss 0.3443 | r_int   7.68 | t=192s
+  Ep  850 | R   230.2 | Avg100   210.7 | Eps 0.010 | Loss 0.3162 | r_int   5.20 | t=194s
+  Ep  860 | R   268.5 | Avg100   221.4 | Eps 0.010 | Loss 0.4402 | r_int   6.04 | t=195s
+  Ep  870 | R   264.2 | Avg100   229.9 | Eps 0.010 | Loss 0.4776 | r_int   6.74 | t=198s
+  Ep  880 | R   285.6 | Avg100   230.8 | Eps 0.010 | Loss 0.4915 | r_int   6.64 | t=200s
+  Ep  890 | R   181.4 | Avg100   230.2 | Eps 0.010 | Loss 0.3458 | r_int   7.81 | t=202s
+  Ep  900 | R   117.9 | Avg100   228.8 | Eps 0.010 | Loss 0.4509 | r_int  14.04 | t=204s
+  Ep  910 | R   197.5 | Avg100   228.5 | Eps 0.010 | Loss 0.3348 | r_int   5.78 | t=206s
+  Ep  920 | R   273.3 | Avg100   230.4 | Eps 0.010 | Loss 0.3425 | r_int  15.21 | t=208s
+  Ep  930 | R   219.6 | Avg100   233.6 | Eps 0.010 | Loss 0.4381 | r_int   8.85 | t=210s
+  Ep  940 | R   234.1 | Avg100   232.8 | Eps 0.010 | Loss 0.3232 | r_int   7.90 | t=212s
+  Ep  950 | R   255.7 | Avg100   233.0 | Eps 0.010 | Loss 0.4503 | r_int   4.79 | t=214s
+  Ep  960 | R   261.3 | Avg100   232.6 | Eps 0.010 | Loss 0.4611 | r_int   9.35 | t=216s
+  Ep  970 | R   278.5 | Avg100   234.1 | Eps 0.010 | Loss 0.3961 | r_int   6.96 | t=218s
+  Ep  980 | R   221.8 | Avg100   236.6 | Eps 0.010 | Loss 0.3952 | r_int   5.48 | t=220s
+  Ep  990 | R   209.6 | Avg100   237.1 | Eps 0.010 | Loss 0.4665 | r_int  15.11 | t=221s
+  Ep 1000 | R   242.4 | Avg100   240.4 | Eps 0.010 | Loss 0.5156 | r_int   6.36 | t=223s
+
+  Done. Log saved to logs/double_icm_seed0.csv
+  Best 100-ep avg: 240.4
+
+[2/9] RUN  double_icm seed=1
+
+=== Run: double_icm_seed1 ===
+  Double DQN:         True
+  Prioritized Replay: False
+  ICM (curiosity):    True
+  Reward shaping:     False
+
+  Device: cpu
+  Ep   10 | R  -190.7 | Avg100  -215.6 | Eps 0.980 | Loss 1.5283 | r_int   0.76 | t=0s
+  Ep   20 | R   -99.4 | Avg100  -173.4 | Eps 0.960 | Loss 1.4763 | r_int   4.07 | t=1s
+  Ep   30 | R  -201.3 | Avg100  -169.7 | Eps 0.941 | Loss 1.2045 | r_int  17.00 | t=1s
+  Ep   40 | R   -95.9 | Avg100  -159.9 | Eps 0.921 | Loss 1.8340 | r_int   0.71 | t=2s
+  Ep   50 | R  -127.1 | Avg100  -166.7 | Eps 0.901 | Loss 1.4792 | r_int   4.08 | t=2s
+  Ep   60 | R  -108.5 | Avg100  -168.2 | Eps 0.881 | Loss 1.5156 | r_int   3.28 | t=3s
+  Ep   70 | R  -115.7 | Avg100  -160.5 | Eps 0.861 | Loss 1.1954 | r_int   1.98 | t=3s
+  Ep   80 | R  -104.1 | Avg100  -155.6 | Eps 0.842 | Loss 1.2284 | r_int   2.97 | t=3s
+  Ep   90 | R  -174.9 | Avg100  -153.4 | Eps 0.822 | Loss 1.1865 | r_int   6.72 | t=4s
+  Ep  100 | R  -247.4 | Avg100  -150.9 | Eps 0.802 | Loss 1.1943 | r_int   2.23 | t=4s
+  Ep  110 | R   -52.2 | Avg100  -142.6 | Eps 0.782 | Loss 1.2830 | r_int   2.67 | t=5s
+  Ep  120 | R  -147.8 | Avg100  -140.8 | Eps 0.762 | Loss 1.6740 | r_int   1.43 | t=5s
+  Ep  130 | R  -148.9 | Avg100  -137.1 | Eps 0.743 | Loss 1.7557 | r_int   2.83 | t=6s
+  Ep  140 | R  -249.5 | Avg100  -134.4 | Eps 0.723 | Loss 1.4047 | r_int   7.96 | t=6s
+  Ep  150 | R  -274.0 | Avg100  -130.7 | Eps 0.703 | Loss 0.9907 | r_int   2.57 | t=7s
+  Ep  160 | R    -1.3 | Avg100  -119.8 | Eps 0.683 | Loss 1.5464 | r_int  10.92 | t=7s
+  Ep  170 | R  -117.0 | Avg100  -118.4 | Eps 0.663 | Loss 1.2392 | r_int   2.72 | t=8s
+  Ep  180 | R   -67.6 | Avg100  -113.1 | Eps 0.644 | Loss 1.4163 | r_int   1.60 | t=9s
+  Ep  190 | R   -31.8 | Avg100  -106.0 | Eps 0.624 | Loss 1.2191 | r_int   3.02 | t=10s
+  Ep  200 | R   -72.6 | Avg100   -98.1 | Eps 0.604 | Loss 1.2323 | r_int   2.22 | t=11s
+  Ep  210 | R  -261.8 | Avg100   -94.8 | Eps 0.584 | Loss 1.3507 | r_int   3.69 | t=12s
+  Ep  220 | R   -32.3 | Avg100   -84.8 | Eps 0.564 | Loss 1.1107 | r_int   2.72 | t=13s
+  Ep  230 | R   118.5 | Avg100   -76.1 | Eps 0.545 | Loss 1.3989 | r_int 131.46 | t=14s
+  Ep  240 | R     1.3 | Avg100   -67.5 | Eps 0.525 | Loss 1.4018 | r_int   4.05 | t=15s
+  Ep  250 | R   -19.5 | Avg100   -56.8 | Eps 0.505 | Loss 1.3186 | r_int   2.00 | t=16s
+  Ep  260 | R  -186.0 | Avg100   -54.0 | Eps 0.485 | Loss 1.3587 | r_int  31.49 | t=18s
+  Ep  270 | R    -7.1 | Avg100   -40.4 | Eps 0.465 | Loss 1.1713 | r_int   2.00 | t=20s
+  Ep  280 | R   -81.2 | Avg100   -38.8 | Eps 0.446 | Loss 1.0606 | r_int   2.63 | t=22s
+  Ep  290 | R   -54.5 | Avg100   -31.3 | Eps 0.426 | Loss 1.6179 | r_int   2.59 | t=25s
+  Ep  300 | R   100.4 | Avg100   -30.5 | Eps 0.406 | Loss 1.0956 | r_int  89.97 | t=27s
+  Ep  310 | R   -59.9 | Avg100   -19.8 | Eps 0.386 | Loss 1.1507 | r_int   5.03 | t=30s
+  Ep  320 | R   -45.7 | Avg100   -20.0 | Eps 0.366 | Loss 1.2012 | r_int   5.49 | t=33s
+  Ep  330 | R   -40.2 | Avg100   -21.3 | Eps 0.347 | Loss 0.9639 | r_int   3.55 | t=36s
+  Ep  340 | R   -93.8 | Avg100   -21.5 | Eps 0.327 | Loss 1.0005 | r_int   1.20 | t=40s
+  Ep  350 | R   -71.2 | Avg100   -19.8 | Eps 0.307 | Loss 0.9657 | r_int   2.33 | t=43s
+  Ep  360 | R    -1.6 | Avg100   -17.1 | Eps 0.287 | Loss 0.9577 | r_int   5.07 | t=48s
+  Ep  370 | R    -0.7 | Avg100   -22.7 | Eps 0.267 | Loss 0.8546 | r_int   5.66 | t=52s
+  Ep  380 | R    -9.5 | Avg100   -21.6 | Eps 0.248 | Loss 0.6881 | r_int   4.36 | t=56s
+  Ep  390 | R   129.6 | Avg100   -19.3 | Eps 0.228 | Loss 0.6159 | r_int  19.56 | t=60s
+  Ep  400 | R   -44.6 | Avg100   -13.7 | Eps 0.208 | Loss 0.5894 | r_int   0.99 | t=65s
+  Ep  410 | R   -42.8 | Avg100   -13.4 | Eps 0.188 | Loss 0.5119 | r_int   4.11 | t=69s
+  Ep  420 | R    15.6 | Avg100    -9.6 | Eps 0.168 | Loss 0.4562 | r_int   2.33 | t=72s
+  Ep  430 | R   -95.5 | Avg100     3.2 | Eps 0.149 | Loss 0.4756 | r_int   1.22 | t=75s
+  Ep  440 | R     6.9 | Avg100     9.3 | Eps 0.129 | Loss 0.4273 | r_int   1.37 | t=78s
+  Ep  450 | R   -40.6 | Avg100    19.9 | Eps 0.109 | Loss 0.4009 | r_int   1.44 | t=82s
+  Ep  460 | R   199.6 | Avg100    33.9 | Eps 0.089 | Loss 0.4180 | r_int   5.68 | t=86s
+  Ep  470 | R   194.2 | Avg100    45.6 | Eps 0.069 | Loss 0.3662 | r_int   2.85 | t=89s
+  Ep  480 | R   172.3 | Avg100    60.9 | Eps 0.050 | Loss 0.3543 | r_int   9.06 | t=93s
+  Ep  490 | R   226.3 | Avg100    65.6 | Eps 0.030 | Loss 0.3530 | r_int  13.02 | t=97s
+  Ep  500 | R   169.3 | Avg100    77.3 | Eps 0.010 | Loss 0.3485 | r_int   6.95 | t=100s
+  Ep  510 | R   126.1 | Avg100    85.6 | Eps 0.010 | Loss 0.3630 | r_int   6.36 | t=103s
+  Ep  520 | R    13.5 | Avg100    89.2 | Eps 0.010 | Loss 0.3211 | r_int   2.65 | t=107s
+  Ep  530 | R   217.0 | Avg100    97.9 | Eps 0.010 | Loss 0.3353 | r_int   3.50 | t=110s
+  Ep  540 | R   233.4 | Avg100   114.1 | Eps 0.010 | Loss 0.3715 | r_int   3.54 | t=112s
+  Ep  550 | R   257.4 | Avg100   126.2 | Eps 0.010 | Loss 0.4120 | r_int   1.27 | t=115s
+  Ep  560 | R    59.6 | Avg100   125.2 | Eps 0.010 | Loss 0.3085 | r_int   7.08 | t=118s
+  Ep  570 | R    -3.8 | Avg100   132.1 | Eps 0.010 | Loss 0.3492 | r_int   3.08 | t=121s
+  Ep  580 | R   169.0 | Avg100   140.2 | Eps 0.010 | Loss 0.2911 | r_int   5.43 | t=124s
+  Ep  590 | R   282.5 | Avg100   155.5 | Eps 0.010 | Loss 0.2924 | r_int   3.69 | t=126s
+  Ep  600 | R   284.0 | Avg100   158.1 | Eps 0.010 | Loss 0.3736 | r_int   3.80 | t=129s
+  Ep  610 | R   215.8 | Avg100   167.8 | Eps 0.010 | Loss 0.3687 | r_int   6.29 | t=131s
+  Ep  620 | R   200.8 | Avg100   182.6 | Eps 0.010 | Loss 0.3232 | r_int   5.27 | t=133s
+  Ep  630 | R   246.6 | Avg100   185.0 | Eps 0.010 | Loss 0.3150 | r_int   4.18 | t=136s
+  Ep  640 | R   238.8 | Avg100   182.4 | Eps 0.010 | Loss 0.4489 | r_int   4.27 | t=138s
+  Ep  650 | R   254.1 | Avg100   185.3 | Eps 0.010 | Loss 0.3915 | r_int   4.09 | t=140s
+  Ep  660 | R   195.0 | Avg100   193.0 | Eps 0.010 | Loss 0.5297 | r_int  10.59 | t=142s
+  Ep  670 | R   217.7 | Avg100   198.3 | Eps 0.010 | Loss 0.4627 | r_int   7.30 | t=144s
+  Ep  680 | R   -78.0 | Avg100   196.4 | Eps 0.010 | Loss 0.4024 | r_int  18.03 | t=147s
+  Ep  690 | R     8.3 | Avg100   189.8 | Eps 0.010 | Loss 0.4061 | r_int  10.74 | t=149s
+  Ep  700 | R   259.5 | Avg100   190.4 | Eps 0.010 | Loss 0.3916 | r_int   2.90 | t=151s
+  Ep  710 | R   191.0 | Avg100   188.5 | Eps 0.010 | Loss 0.4018 | r_int   7.11 | t=154s
+  Ep  720 | R   202.4 | Avg100   184.0 | Eps 0.010 | Loss 0.3723 | r_int  10.11 | t=157s
+  Ep  730 | R   216.8 | Avg100   183.5 | Eps 0.010 | Loss 0.4209 | r_int   2.94 | t=159s
+  Ep  740 | R   209.9 | Avg100   187.1 | Eps 0.010 | Loss 0.4225 | r_int   5.05 | t=161s
+  Ep  750 | R   222.4 | Avg100   184.0 | Eps 0.010 | Loss 0.4415 | r_int   1.70 | t=163s
+  Ep  760 | R   210.6 | Avg100   185.7 | Eps 0.010 | Loss 0.4563 | r_int   6.90 | t=166s
+  Ep  770 | R   206.4 | Avg100   182.9 | Eps 0.010 | Loss 0.4204 | r_int   6.89 | t=168s
+  Ep  780 | R   241.6 | Avg100   186.9 | Eps 0.010 | Loss 0.4236 | r_int  24.66 | t=170s
+  Ep  790 | R   256.2 | Avg100   189.0 | Eps 0.010 | Loss 0.5230 | r_int   2.99 | t=173s
+  Ep  800 | R   266.9 | Avg100   191.0 | Eps 0.010 | Loss 0.4950 | r_int  18.11 | t=175s
+  Ep  810 | R   -28.0 | Avg100   195.4 | Eps 0.010 | Loss 0.3916 | r_int  43.53 | t=177s
+  Ep  820 | R   170.6 | Avg100   196.2 | Eps 0.010 | Loss 0.4090 | r_int   6.69 | t=179s
+  Ep  830 | R   155.8 | Avg100   192.4 | Eps 0.010 | Loss 0.4232 | r_int   6.36 | t=181s
+  Ep  840 | R   261.9 | Avg100   196.3 | Eps 0.010 | Loss 0.3859 | r_int   6.33 | t=182s
+  Ep  850 | R   295.6 | Avg100   197.9 | Eps 0.010 | Loss 0.4378 | r_int   4.05 | t=185s
+  Ep  860 | R   248.7 | Avg100   195.0 | Eps 0.010 | Loss 0.4103 | r_int   3.39 | t=188s
+  Ep  870 | R   251.9 | Avg100   200.2 | Eps 0.010 | Loss 0.4165 | r_int   4.47 | t=189s
+  Ep  880 | R   272.1 | Avg100   199.1 | Eps 0.010 | Loss 0.4334 | r_int   4.67 | t=192s
+  Ep  890 | R   270.7 | Avg100   201.0 | Eps 0.010 | Loss 0.4258 | r_int  10.97 | t=194s
+  Ep  900 | R   275.4 | Avg100   203.7 | Eps 0.010 | Loss 0.3772 | r_int   7.76 | t=196s
+  Ep  910 | R   217.3 | Avg100   205.6 | Eps 0.010 | Loss 0.4548 | r_int   6.70 | t=198s
+  Ep  920 | R   181.1 | Avg100   210.0 | Eps 0.010 | Loss 0.3883 | r_int   7.47 | t=201s
+  Ep  930 | R   249.9 | Avg100   219.8 | Eps 0.010 | Loss 0.3029 | r_int   3.87 | t=202s
+  Ep  940 | R   240.7 | Avg100   216.9 | Eps 0.010 | Loss 0.3690 | r_int   9.44 | t=204s
+  Ep  950 | R   219.7 | Avg100   216.2 | Eps 0.010 | Loss 0.4835 | r_int   8.86 | t=207s
+  Ep  960 | R   229.5 | Avg100   221.0 | Eps 0.010 | Loss 0.2883 | r_int   2.39 | t=209s
+  Ep  970 | R   227.2 | Avg100   217.8 | Eps 0.010 | Loss 0.4160 | r_int   7.05 | t=211s
+  Ep  980 | R   218.4 | Avg100   216.8 | Eps 0.010 | Loss 0.5181 | r_int   4.19 | t=213s
+  Ep  990 | R   267.0 | Avg100   220.5 | Eps 0.010 | Loss 0.3110 | r_int   5.72 | t=215s
+  Ep 1000 | R   190.3 | Avg100   222.0 | Eps 0.010 | Loss 0.4506 | r_int  16.48 | t=218s
+
+  Done. Log saved to logs/double_icm_seed1.csv
+  Best 100-ep avg: 222.8
+
+[3/9] RUN  double_icm seed=2
+
+=== Run: double_icm_seed2 ===
+  Double DQN:         True
+  Prioritized Replay: False
+  ICM (curiosity):    True
+  Reward shaping:     False
+
+  Device: cpu
+  Ep   10 | R  -152.5 | Avg100  -180.0 | Eps 0.980 | Loss 2.4006 | r_int   0.21 | t=0s
+  Ep   20 | R  -217.4 | Avg100  -178.5 | Eps 0.960 | Loss 1.8972 | r_int   3.41 | t=1s
+  Ep   30 | R  -247.3 | Avg100  -173.9 | Eps 0.941 | Loss 1.4695 | r_int   8.56 | t=1s
+  Ep   40 | R  -149.5 | Avg100  -177.8 | Eps 0.921 | Loss 1.1103 | r_int   3.39 | t=2s
+  Ep   50 | R  -115.1 | Avg100  -170.9 | Eps 0.901 | Loss 1.1199 | r_int   0.71 | t=2s
+  Ep   60 | R     7.3 | Avg100  -167.1 | Eps 0.881 | Loss 1.4590 | r_int   3.18 | t=2s
+  Ep   70 | R  -335.5 | Avg100  -166.5 | Eps 0.861 | Loss 1.4572 | r_int   7.84 | t=3s
+  Ep   80 | R  -298.5 | Avg100  -167.7 | Eps 0.842 | Loss 1.1660 | r_int   2.34 | t=3s
+  Ep   90 | R    28.6 | Avg100  -160.1 | Eps 0.822 | Loss 1.2969 | r_int   9.59 | t=4s
+  Ep  100 | R   -87.9 | Avg100  -155.3 | Eps 0.802 | Loss 1.3726 | r_int   4.61 | t=4s
+  Ep  110 | R  -136.6 | Avg100  -149.6 | Eps 0.782 | Loss 1.2169 | r_int   4.68 | t=5s
+  Ep  120 | R    -1.6 | Avg100  -143.5 | Eps 0.762 | Loss 1.3495 | r_int   8.85 | t=5s
+  Ep  130 | R    31.3 | Avg100  -136.5 | Eps 0.743 | Loss 1.1799 | r_int  20.05 | t=6s
+  Ep  140 | R  -166.9 | Avg100  -125.4 | Eps 0.723 | Loss 1.2513 | r_int   5.13 | t=7s
+  Ep  150 | R  -102.7 | Avg100  -121.2 | Eps 0.703 | Loss 1.2415 | r_int   2.49 | t=7s
+  Ep  160 | R   -38.5 | Avg100  -114.4 | Eps 0.683 | Loss 1.3608 | r_int   5.64 | t=8s
+  Ep  170 | R   -75.3 | Avg100  -105.7 | Eps 0.663 | Loss 1.5776 | r_int   9.54 | t=8s
+  Ep  180 | R  -113.1 | Avg100   -96.1 | Eps 0.644 | Loss 1.5113 | r_int   4.47 | t=9s
+  Ep  190 | R   -68.5 | Avg100   -93.0 | Eps 0.624 | Loss 1.4643 | r_int   2.32 | t=10s
+  Ep  200 | R   -99.5 | Avg100   -87.8 | Eps 0.604 | Loss 1.3106 | r_int   1.89 | t=11s
+  Ep  210 | R    33.1 | Avg100   -82.2 | Eps 0.584 | Loss 1.3916 | r_int   8.47 | t=11s
+  Ep  220 | R   -97.2 | Avg100   -77.1 | Eps 0.564 | Loss 1.0513 | r_int   3.91 | t=12s
+  Ep  230 | R    33.9 | Avg100   -75.7 | Eps 0.545 | Loss 1.3104 | r_int   3.80 | t=13s
+  Ep  240 | R   -32.9 | Avg100   -72.1 | Eps 0.525 | Loss 1.2762 | r_int   2.77 | t=14s
+  Ep  250 | R   -51.5 | Avg100   -68.7 | Eps 0.505 | Loss 1.1561 | r_int   3.43 | t=15s
+  Ep  260 | R   -68.8 | Avg100   -66.3 | Eps 0.485 | Loss 1.1024 | r_int   1.86 | t=16s
+  Ep  270 | R    44.3 | Avg100   -64.1 | Eps 0.465 | Loss 1.1319 | r_int 104.61 | t=17s
+  Ep  280 | R   -14.1 | Avg100   -60.0 | Eps 0.446 | Loss 0.9641 | r_int   8.02 | t=18s
+  Ep  290 | R     9.3 | Avg100   -57.7 | Eps 0.426 | Loss 1.1394 | r_int 112.71 | t=19s
+  Ep  300 | R  -144.8 | Avg100   -59.5 | Eps 0.406 | Loss 1.0173 | r_int   3.51 | t=22s
+  Ep  310 | R   -43.5 | Avg100   -56.8 | Eps 0.386 | Loss 1.2035 | r_int  13.38 | t=24s
+  Ep  320 | R    18.5 | Avg100   -50.9 | Eps 0.366 | Loss 1.0822 | r_int   3.77 | t=26s
+  Ep  330 | R    -8.4 | Avg100   -43.1 | Eps 0.347 | Loss 0.9582 | r_int   1.62 | t=29s
+  Ep  340 | R   -16.0 | Avg100   -39.7 | Eps 0.327 | Loss 1.0269 | r_int   1.35 | t=34s
+  Ep  350 | R   -46.3 | Avg100   -35.8 | Eps 0.307 | Loss 0.9310 | r_int   0.93 | t=38s
+  Ep  360 | R   -12.4 | Avg100   -31.3 | Eps 0.287 | Loss 0.8754 | r_int   1.05 | t=42s
+  Ep  370 | R   -28.5 | Avg100   -26.7 | Eps 0.267 | Loss 0.9117 | r_int   0.90 | t=47s
+  Ep  380 | R   -25.4 | Avg100   -23.4 | Eps 0.248 | Loss 0.7636 | r_int   2.66 | t=51s
+  Ep  390 | R   192.5 | Avg100   -13.7 | Eps 0.228 | Loss 0.7549 | r_int  23.79 | t=55s
+  Ep  400 | R    93.3 | Avg100    -3.9 | Eps 0.208 | Loss 0.6028 | r_int  53.80 | t=59s
+  Ep  410 | R   -70.7 | Avg100    -2.2 | Eps 0.188 | Loss 0.6245 | r_int   0.85 | t=63s
+  Ep  420 | R   -41.3 | Avg100    -0.9 | Eps 0.168 | Loss 0.5120 | r_int   1.05 | t=67s
+  Ep  430 | R   -59.5 | Avg100     2.3 | Eps 0.149 | Loss 0.4499 | r_int   0.84 | t=71s
+  Ep  440 | R    -2.7 | Avg100     5.8 | Eps 0.129 | Loss 0.4166 | r_int   0.78 | t=75s
+  Ep  450 | R   262.6 | Avg100    19.0 | Eps 0.109 | Loss 0.4588 | r_int   2.35 | t=78s
+  Ep  460 | R    44.2 | Avg100    30.7 | Eps 0.089 | Loss 0.4228 | r_int  13.55 | t=82s
+  Ep  470 | R   316.2 | Avg100    45.8 | Eps 0.069 | Loss 0.4898 | r_int   2.02 | t=84s
+  Ep  480 | R   186.1 | Avg100    61.5 | Eps 0.050 | Loss 0.4541 | r_int  10.35 | t=87s
+  Ep  490 | R   289.0 | Avg100    71.9 | Eps 0.030 | Loss 0.4571 | r_int   2.34 | t=89s
+  Ep  500 | R   283.9 | Avg100    89.8 | Eps 0.010 | Loss 0.4518 | r_int   2.20 | t=91s
+  Ep  510 | R   179.0 | Avg100   106.2 | Eps 0.010 | Loss 0.4112 | r_int   3.05 | t=94s
+  Ep  520 | R  -103.5 | Avg100   122.4 | Eps 0.010 | Loss 0.4211 | r_int   3.56 | t=96s
+  Ep  530 | R   195.8 | Avg100   133.1 | Eps 0.010 | Loss 0.4053 | r_int   2.54 | t=99s
+  Ep  540 | R   -21.8 | Avg100   137.7 | Eps 0.010 | Loss 0.4390 | r_int   1.78 | t=103s
+  Ep  550 | R     2.5 | Avg100   132.2 | Eps 0.010 | Loss 0.3968 | r_int   1.43 | t=107s
+  Ep  560 | R   -22.1 | Avg100   130.8 | Eps 0.010 | Loss 0.3739 | r_int   2.03 | t=110s
+  Ep  570 | R    -6.1 | Avg100   120.3 | Eps 0.010 | Loss 0.3344 | r_int   2.00 | t=115s
+  Ep  580 | R   184.3 | Avg100   112.8 | Eps 0.010 | Loss 0.3256 | r_int   3.74 | t=118s
+  Ep  590 | R   114.6 | Avg100   106.9 | Eps 0.010 | Loss 0.3273 | r_int  25.57 | t=121s
+  Ep  600 | R   206.9 | Avg100    94.7 | Eps 0.010 | Loss 0.3101 | r_int   2.84 | t=125s
+  Ep  610 | R   -10.2 | Avg100    94.2 | Eps 0.010 | Loss 0.3010 | r_int   2.68 | t=128s
+  Ep  620 | R   -22.6 | Avg100    90.4 | Eps 0.010 | Loss 0.3018 | r_int   2.25 | t=131s
+  Ep  630 | R   -11.1 | Avg100    84.6 | Eps 0.010 | Loss 0.3130 | r_int   2.56 | t=134s
+  Ep  640 | R   -15.8 | Avg100    86.5 | Eps 0.010 | Loss 0.2385 | r_int   3.70 | t=138s
+  Ep  650 | R   235.3 | Avg100    96.9 | Eps 0.010 | Loss 0.2358 | r_int   6.66 | t=141s
+  Ep  660 | R   232.8 | Avg100   100.1 | Eps 0.010 | Loss 0.1742 | r_int   6.65 | t=144s
+  Ep  670 | R     7.2 | Avg100   105.8 | Eps 0.010 | Loss 0.2432 | r_int   2.92 | t=147s
+  Ep  680 | R   239.5 | Avg100   108.0 | Eps 0.010 | Loss 0.2661 | r_int   3.49 | t=151s
+  Ep  690 | R   235.6 | Avg100   111.0 | Eps 0.010 | Loss 0.2056 | r_int   3.87 | t=154s
+  Ep  700 | R   262.2 | Avg100   117.1 | Eps 0.010 | Loss 0.2283 | r_int   5.30 | t=156s
+  Ep  710 | R   -16.7 | Avg100   122.9 | Eps 0.010 | Loss 0.2763 | r_int   3.86 | t=158s
+  Ep  720 | R     3.3 | Avg100   119.9 | Eps 0.010 | Loss 0.2231 | r_int   3.17 | t=161s
+  Ep  730 | R   148.3 | Avg100   125.7 | Eps 0.010 | Loss 0.2508 | r_int  19.26 | t=164s
+  Ep  740 | R   176.7 | Avg100   125.8 | Eps 0.010 | Loss 0.2588 | r_int  14.55 | t=168s
+  Ep  750 | R   -12.1 | Avg100   118.9 | Eps 0.010 | Loss 0.2225 | r_int   4.36 | t=171s
+  Ep  760 | R   255.5 | Avg100   121.1 | Eps 0.010 | Loss 0.1878 | r_int   3.74 | t=174s
+  Ep  770 | R   192.9 | Avg100   126.5 | Eps 0.010 | Loss 0.2484 | r_int  10.48 | t=177s
+  Ep  780 | R    -7.0 | Avg100   131.8 | Eps 0.010 | Loss 0.2330 | r_int   4.35 | t=180s
+  Ep  790 | R   256.4 | Avg100   129.3 | Eps 0.010 | Loss 0.1506 | r_int   4.08 | t=183s
+  Ep  800 | R   240.3 | Avg100   134.9 | Eps 0.010 | Loss 0.3105 | r_int   5.84 | t=186s
+  Ep  810 | R   229.9 | Avg100   139.7 | Eps 0.010 | Loss 0.2237 | r_int  14.51 | t=187s
+  Ep  820 | R   234.7 | Avg100   146.7 | Eps 0.010 | Loss 0.1991 | r_int   7.34 | t=190s
+  Ep  830 | R   247.7 | Avg100   150.4 | Eps 0.010 | Loss 0.2551 | r_int  10.40 | t=192s
+  Ep  840 | R     2.6 | Avg100   153.6 | Eps 0.010 | Loss 0.2644 | r_int   6.05 | t=195s
+  Ep  850 | R   235.6 | Avg100   159.6 | Eps 0.010 | Loss 0.2461 | r_int   8.75 | t=198s
+  Ep  860 | R   235.8 | Avg100   167.4 | Eps 0.010 | Loss 0.2206 | r_int   4.68 | t=200s
+  Ep  870 | R   258.6 | Avg100   172.9 | Eps 0.010 | Loss 0.2442 | r_int  17.12 | t=202s
+  Ep  880 | R   256.7 | Avg100   181.7 | Eps 0.010 | Loss 0.2887 | r_int   2.02 | t=204s
+  Ep  890 | R   276.5 | Avg100   193.8 | Eps 0.010 | Loss 0.1555 | r_int  10.56 | t=205s
+  Ep  900 | R    -0.8 | Avg100   191.7 | Eps 0.010 | Loss 0.2401 | r_int   6.97 | t=207s
+  Ep  910 | R   235.2 | Avg100   190.8 | Eps 0.010 | Loss 0.3733 | r_int   9.78 | t=209s
+  Ep  920 | R   199.0 | Avg100   194.0 | Eps 0.010 | Loss 0.3469 | r_int  19.23 | t=211s
+  Ep  930 | R   229.8 | Avg100   198.0 | Eps 0.010 | Loss 0.3442 | r_int   5.00 | t=213s
+  Ep  940 | R    32.9 | Avg100   207.2 | Eps 0.010 | Loss 0.3224 | r_int  15.65 | t=215s
+  Ep  950 | R   227.7 | Avg100   216.9 | Eps 0.010 | Loss 0.3081 | r_int  14.95 | t=216s
+  Ep  960 | R   270.2 | Avg100   213.9 | Eps 0.010 | Loss 0.3004 | r_int   7.07 | t=219s
+  Ep  970 | R   165.8 | Avg100   213.2 | Eps 0.010 | Loss 0.4069 | r_int  10.81 | t=221s
+  Ep  980 | R   209.1 | Avg100   213.9 | Eps 0.010 | Loss 0.4278 | r_int   7.91 | t=223s
+  Ep  990 | R   278.1 | Avg100   213.6 | Eps 0.010 | Loss 0.2985 | r_int   9.97 | t=225s
+  Ep 1000 | R   228.3 | Avg100   218.0 | Eps 0.010 | Loss 0.4243 | r_int  15.16 | t=226s
+
+  Done. Log saved to logs/double_icm_seed2.csv
+  Best 100-ep avg: 218.2
+
+[4/9] RUN  double_shaping seed=0
+
+=== Run: double_shaping_seed0 ===
+  Double DQN:         True
+  Prioritized Replay: False
+  ICM (curiosity):    False
+  Reward shaping:     True
+
+  Device: cpu
+  Ep   10 | R  -247.7 | Avg100  -190.3 | Eps 0.980 | Loss 2.2162 | F    1.44 | t=0s
+  Ep   20 | R  -242.4 | Avg100  -167.6 | Eps 0.960 | Loss 2.3744 | F    1.64 | t=0s
+  Ep   30 | R  -306.9 | Avg100  -178.6 | Eps 0.941 | Loss 1.7121 | F    1.52 | t=0s
+  Ep   40 | R   -80.6 | Avg100  -181.8 | Eps 0.921 | Loss 1.4950 | F    2.43 | t=1s
+  Ep   50 | R   -33.8 | Avg100  -175.2 | Eps 0.901 | Loss 1.7312 | F    3.01 | t=1s
+  Ep   60 | R   -84.7 | Avg100  -167.6 | Eps 0.881 | Loss 1.8318 | F    2.20 | t=1s
+  Ep   70 | R  -261.7 | Avg100  -169.2 | Eps 0.861 | Loss 1.5214 | F    1.69 | t=1s
+  Ep   80 | R  -117.8 | Avg100  -163.4 | Eps 0.842 | Loss 1.9259 | F    2.41 | t=1s
+  Ep   90 | R   -33.9 | Avg100  -161.3 | Eps 0.822 | Loss 1.4175 | F    3.70 | t=1s
+  Ep  100 | R   -70.0 | Avg100  -159.9 | Eps 0.802 | Loss 1.2503 | F    2.65 | t=1s
+  Ep  110 | R  -106.6 | Avg100  -153.5 | Eps 0.782 | Loss 1.6547 | F    3.84 | t=2s
+  Ep  120 | R   -42.3 | Avg100  -150.0 | Eps 0.762 | Loss 1.6108 | F    2.96 | t=2s
+  Ep  130 | R  -133.4 | Avg100  -138.6 | Eps 0.743 | Loss 1.3581 | F    3.19 | t=2s
+  Ep  140 | R  -154.4 | Avg100  -132.8 | Eps 0.723 | Loss 1.6571 | F    2.99 | t=2s
+  Ep  150 | R  -114.1 | Avg100  -131.3 | Eps 0.703 | Loss 1.3476 | F    3.37 | t=2s
+  Ep  160 | R  -111.3 | Avg100  -125.9 | Eps 0.683 | Loss 1.0663 | F    2.68 | t=2s
+  Ep  170 | R  -122.5 | Avg100  -117.4 | Eps 0.663 | Loss 1.9701 | F    3.38 | t=3s
+  Ep  180 | R   -57.5 | Avg100  -118.1 | Eps 0.644 | Loss 1.1971 | F    2.69 | t=3s
+  Ep  190 | R  -100.5 | Avg100  -111.6 | Eps 0.624 | Loss 1.5675 | F    2.19 | t=3s
+  Ep  200 | R   -98.1 | Avg100  -104.9 | Eps 0.604 | Loss 1.4117 | F    3.65 | t=3s
+  Ep  210 | R   -77.3 | Avg100   -98.4 | Eps 0.584 | Loss 1.3898 | F    2.78 | t=3s
+  Ep  220 | R   -77.6 | Avg100   -95.3 | Eps 0.564 | Loss 1.2777 | F    2.70 | t=4s
+  Ep  230 | R  -151.7 | Avg100   -95.5 | Eps 0.545 | Loss 1.3597 | F    3.65 | t=4s
+  Ep  240 | R  -107.1 | Avg100   -88.4 | Eps 0.525 | Loss 1.2706 | F    5.72 | t=4s
+  Ep  250 | R    70.6 | Avg100   -78.4 | Eps 0.505 | Loss 1.2627 | F    3.81 | t=5s
+  Ep  260 | R  -288.3 | Avg100   -80.5 | Eps 0.485 | Loss 1.3140 | F    2.81 | t=5s
+  Ep  270 | R   -72.1 | Avg100   -74.9 | Eps 0.465 | Loss 1.3639 | F    6.30 | t=6s
+  Ep  280 | R   -45.3 | Avg100   -61.2 | Eps 0.446 | Loss 1.1795 | F    3.14 | t=6s
+  Ep  290 | R    90.6 | Avg100   -58.1 | Eps 0.426 | Loss 1.3139 | F    5.67 | t=7s
+  Ep  300 | R    29.9 | Avg100   -51.3 | Eps 0.406 | Loss 1.1340 | F    4.12 | t=7s
+  Ep  310 | R   107.7 | Avg100   -49.2 | Eps 0.386 | Loss 1.1649 | F    2.69 | t=8s
+  Ep  320 | R    47.1 | Avg100   -41.5 | Eps 0.366 | Loss 1.1888 | F    5.73 | t=10s
+  Ep  330 | R   -42.9 | Avg100   -39.1 | Eps 0.347 | Loss 1.2375 | F   10.57 | t=11s
+  Ep  340 | R    47.8 | Avg100   -36.3 | Eps 0.327 | Loss 1.0537 | F    7.59 | t=12s
+  Ep  350 | R   -40.8 | Avg100   -37.3 | Eps 0.307 | Loss 1.0864 | F    5.47 | t=14s
+  Ep  360 | R    36.2 | Avg100   -30.3 | Eps 0.287 | Loss 1.0517 | F    4.09 | t=15s
+  Ep  370 | R   -15.3 | Avg100   -28.7 | Eps 0.267 | Loss 0.9950 | F    7.14 | t=16s
+  Ep  380 | R    27.0 | Avg100   -31.9 | Eps 0.248 | Loss 0.9143 | F    8.99 | t=18s
+  Ep  390 | R    28.0 | Avg100   -27.6 | Eps 0.228 | Loss 0.8580 | F    6.17 | t=19s
+  Ep  400 | R   -19.7 | Avg100   -27.6 | Eps 0.208 | Loss 0.7326 | F    5.78 | t=21s
+  Ep  410 | R   -43.0 | Avg100   -26.6 | Eps 0.188 | Loss 0.6558 | F    6.12 | t=22s
+  Ep  420 | R    -7.8 | Avg100   -28.5 | Eps 0.168 | Loss 0.5505 | F    8.50 | t=24s
+  Ep  430 | R    -7.4 | Avg100   -23.8 | Eps 0.149 | Loss 0.4520 | F    4.93 | t=25s
+  Ep  440 | R   -27.4 | Avg100   -22.8 | Eps 0.129 | Loss 0.4536 | F    6.00 | t=27s
+  Ep  450 | R    13.7 | Avg100   -21.1 | Eps 0.109 | Loss 0.3844 | F    5.52 | t=28s
+  Ep  460 | R   -17.5 | Avg100   -26.3 | Eps 0.089 | Loss 0.3658 | F    6.03 | t=30s
+  Ep  470 | R   -31.5 | Avg100   -27.1 | Eps 0.069 | Loss 0.3122 | F    4.74 | t=31s
+  Ep  480 | R    -5.8 | Avg100   -29.2 | Eps 0.050 | Loss 0.3039 | F    7.04 | t=33s
+  Ep  490 | R   -21.8 | Avg100   -31.1 | Eps 0.030 | Loss 0.2477 | F    8.13 | t=34s
+  Ep  500 | R    20.3 | Avg100   -30.7 | Eps 0.010 | Loss 0.2333 | F    5.76 | t=35s
+  Ep  510 | R   -40.1 | Avg100   -29.8 | Eps 0.010 | Loss 0.2348 | F    6.89 | t=37s
+  Ep  520 | R    30.5 | Avg100   -32.4 | Eps 0.010 | Loss 0.2362 | F    4.96 | t=39s
+  Ep  530 | R  -105.8 | Avg100   -32.4 | Eps 0.010 | Loss 0.2149 | F    7.40 | t=40s
+  Ep  540 | R   -11.7 | Avg100   -33.2 | Eps 0.010 | Loss 0.2296 | F    5.49 | t=42s
+  Ep  550 | R    21.3 | Avg100   -30.1 | Eps 0.010 | Loss 0.2091 | F    6.16 | t=43s
+  Ep  560 | R    16.1 | Avg100   -24.2 | Eps 0.010 | Loss 0.2088 | F    6.27 | t=45s
+  Ep  570 | R    19.8 | Avg100   -15.0 | Eps 0.010 | Loss 0.2271 | F    4.45 | t=46s
+  Ep  580 | R   -44.8 | Avg100    -8.0 | Eps 0.010 | Loss 0.2199 | F    4.48 | t=48s
+  Ep  590 | R   -18.9 | Avg100    -8.2 | Eps 0.010 | Loss 0.2032 | F    3.69 | t=49s
+  Ep  600 | R   -73.9 | Avg100    -5.0 | Eps 0.010 | Loss 0.2160 | F    4.34 | t=51s
+  Ep  610 | R   195.7 | Avg100     9.2 | Eps 0.010 | Loss 0.2577 | F    5.77 | t=52s
+  Ep  620 | R   -16.3 | Avg100    16.1 | Eps 0.010 | Loss 0.2227 | F    5.73 | t=53s
+  Ep  630 | R   -11.0 | Avg100    27.3 | Eps 0.010 | Loss 0.2187 | F    4.82 | t=54s
+  Ep  640 | R   -35.1 | Avg100    31.5 | Eps 0.010 | Loss 0.2659 | F    4.55 | t=56s
+  Ep  650 | R    12.6 | Avg100    39.8 | Eps 0.010 | Loss 0.2893 | F    4.80 | t=57s
+  Ep  660 | R    35.6 | Avg100    46.7 | Eps 0.010 | Loss 0.2282 | F    6.76 | t=58s
+  Ep  670 | R    16.1 | Avg100    42.3 | Eps 0.010 | Loss 0.2295 | F    4.71 | t=60s
+  Ep  680 | R    -9.7 | Avg100    41.9 | Eps 0.010 | Loss 0.2647 | F    4.57 | t=62s
+  Ep  690 | R   173.6 | Avg100    45.4 | Eps 0.010 | Loss 0.1927 | F    4.76 | t=63s
+  Ep  700 | R    -4.7 | Avg100    41.4 | Eps 0.010 | Loss 0.1998 | F    4.16 | t=65s
+  Ep  710 | R    29.5 | Avg100    31.2 | Eps 0.010 | Loss 0.1870 | F    4.69 | t=66s
+  Ep  720 | R    16.5 | Avg100    32.5 | Eps 0.010 | Loss 0.1658 | F    4.84 | t=68s
+  Ep  730 | R   -18.9 | Avg100    25.7 | Eps 0.010 | Loss 0.1274 | F    4.27 | t=70s
+  Ep  740 | R    20.3 | Avg100    24.5 | Eps 0.010 | Loss 0.1251 | F    4.27 | t=71s
+  Ep  750 | R     4.2 | Avg100    17.4 | Eps 0.010 | Loss 0.1472 | F    4.69 | t=73s
+  Ep  760 | R    22.2 | Avg100    12.9 | Eps 0.010 | Loss 0.1039 | F    4.02 | t=74s
+  Ep  770 | R   -12.0 | Avg100    10.5 | Eps 0.010 | Loss 0.0915 | F    4.56 | t=76s
+  Ep  780 | R    -2.3 | Avg100     9.8 | Eps 0.010 | Loss 0.0986 | F    4.99 | t=78s
+  Ep  790 | R    15.7 | Avg100     9.6 | Eps 0.010 | Loss 0.1047 | F    5.87 | t=79s
+  Ep  800 | R   -23.8 | Avg100    14.2 | Eps 0.010 | Loss 0.0840 | F    3.69 | t=81s
+  Ep  810 | R    28.7 | Avg100    16.8 | Eps 0.010 | Loss 0.1079 | F    6.03 | t=82s
+  Ep  820 | R    26.1 | Avg100    24.9 | Eps 0.010 | Loss 0.0900 | F    4.82 | t=84s
+  Ep  830 | R   229.9 | Avg100    38.6 | Eps 0.010 | Loss 0.0898 | F    3.92 | t=85s
+  Ep  840 | R   145.6 | Avg100    52.3 | Eps 0.010 | Loss 0.1212 | F    4.03 | t=86s
+  Ep  850 | R   155.2 | Avg100    68.7 | Eps 0.010 | Loss 0.1880 | F    3.78 | t=88s
+  Ep  860 | R   235.4 | Avg100    85.3 | Eps 0.010 | Loss 0.1783 | F    3.96 | t=89s
+  Ep  870 | R   179.9 | Avg100   104.8 | Eps 0.010 | Loss 0.1826 | F    3.70 | t=90s
+  Ep  880 | R   249.9 | Avg100   123.1 | Eps 0.010 | Loss 0.1469 | F    3.57 | t=91s
+  Ep  890 | R   228.0 | Avg100   144.1 | Eps 0.010 | Loss 0.2278 | F    3.88 | t=92s
+  Ep  900 | R   208.9 | Avg100   162.7 | Eps 0.010 | Loss 0.1800 | F    3.70 | t=93s
+  Ep  910 | R   230.8 | Avg100   178.0 | Eps 0.010 | Loss 0.2544 | F    4.11 | t=94s
+  Ep  920 | R   217.8 | Avg100   190.0 | Eps 0.010 | Loss 0.2114 | F    3.95 | t=94s
+  Ep  930 | R   283.3 | Avg100   194.6 | Eps 0.010 | Loss 0.2455 | F    3.55 | t=95s
+  Ep  940 | R   221.6 | Avg100   205.0 | Eps 0.010 | Loss 0.2842 | F    3.42 | t=96s
+  Ep  950 | R   244.0 | Avg100   211.4 | Eps 0.010 | Loss 0.3264 | F    3.86 | t=97s
+  Ep  960 | R   243.9 | Avg100   217.5 | Eps 0.010 | Loss 0.2436 | F    5.45 | t=98s
+  Ep  970 | R   226.6 | Avg100   220.8 | Eps 0.010 | Loss 0.3195 | F    4.47 | t=98s
+  Ep  980 | R   242.7 | Avg100   223.9 | Eps 0.010 | Loss 0.4014 | F    5.88 | t=99s
+  Ep  990 | R   223.0 | Avg100   223.8 | Eps 0.010 | Loss 0.4443 | F    3.56 | t=100s
+  Ep 1000 | R   224.0 | Avg100   225.5 | Eps 0.010 | Loss 0.3279 | F    3.84 | t=100s
+
+  Done. Log saved to logs/double_shaping_seed0.csv
+  Best 100-ep avg: 226.0
+
+[5/9] RUN  double_shaping seed=1
+
+=== Run: double_shaping_seed1 ===
+  Double DQN:         True
+  Prioritized Replay: False
+  ICM (curiosity):    False
+  Reward shaping:     True
+
+  Device: cpu
+  Ep   10 | R  -190.7 | Avg100  -215.6 | Eps 0.980 | Loss 1.5340 | F    1.81 | t=0s
+  Ep   20 | R   -99.4 | Avg100  -173.4 | Eps 0.960 | Loss 1.4727 | F    1.76 | t=0s
+  Ep   30 | R  -103.3 | Avg100  -147.7 | Eps 0.941 | Loss 1.1475 | F    2.96 | t=0s
+  Ep   40 | R  -224.9 | Avg100  -142.6 | Eps 0.921 | Loss 1.8212 | F    2.98 | t=1s
+  Ep   50 | R  -170.9 | Avg100  -137.8 | Eps 0.901 | Loss 1.4701 | F    2.67 | t=1s
+  Ep   60 | R  -194.4 | Avg100  -138.3 | Eps 0.881 | Loss 1.4677 | F    2.67 | t=1s
+  Ep   70 | R   -14.9 | Avg100  -132.7 | Eps 0.861 | Loss 1.3841 | F    3.30 | t=1s
+  Ep   80 | R   -91.9 | Avg100  -127.9 | Eps 0.842 | Loss 1.3171 | F    2.63 | t=1s
+  Ep   90 | R  -152.3 | Avg100  -131.1 | Eps 0.822 | Loss 1.4379 | F    3.06 | t=1s
+  Ep  100 | R  -117.2 | Avg100  -127.7 | Eps 0.802 | Loss 1.4583 | F    2.43 | t=1s
+  Ep  110 | R   -85.2 | Avg100  -120.5 | Eps 0.782 | Loss 1.5476 | F    2.29 | t=2s
+  Ep  120 | R    16.0 | Avg100  -121.0 | Eps 0.762 | Loss 1.5669 | F    3.73 | t=2s
+  Ep  130 | R   -87.4 | Avg100  -124.9 | Eps 0.743 | Loss 1.3808 | F    3.17 | t=2s
+  Ep  140 | R   -84.8 | Avg100  -121.7 | Eps 0.723 | Loss 1.0454 | F    2.23 | t=2s
+  Ep  150 | R   -92.2 | Avg100  -121.6 | Eps 0.703 | Loss 1.5646 | F    2.56 | t=2s
+  Ep  160 | R   -77.1 | Avg100  -119.1 | Eps 0.683 | Loss 1.2886 | F    3.53 | t=3s
+  Ep  170 | R   -92.9 | Avg100  -117.9 | Eps 0.663 | Loss 1.4493 | F    2.68 | t=3s
+  Ep  180 | R   -15.9 | Avg100  -119.9 | Eps 0.644 | Loss 1.4668 | F    4.23 | t=3s
+  Ep  190 | R   -57.1 | Avg100  -114.5 | Eps 0.624 | Loss 1.7507 | F    2.86 | t=3s
+  Ep  200 | R  -237.7 | Avg100  -112.5 | Eps 0.604 | Loss 1.3628 | F    2.79 | t=4s
+  Ep  210 | R   -64.4 | Avg100  -104.2 | Eps 0.584 | Loss 1.0235 | F    2.99 | t=4s
+  Ep  220 | R   -92.2 | Avg100   -94.7 | Eps 0.564 | Loss 1.2379 | F    4.56 | t=4s
+  Ep  230 | R   -63.7 | Avg100   -85.3 | Eps 0.545 | Loss 1.5060 | F    4.78 | t=5s
+  Ep  240 | R   -80.1 | Avg100   -79.6 | Eps 0.525 | Loss 1.3931 | F    4.69 | t=5s
+  Ep  250 | R   -74.6 | Avg100   -78.1 | Eps 0.505 | Loss 1.6758 | F    2.84 | t=5s
+  Ep  260 | R   -33.6 | Avg100   -66.2 | Eps 0.485 | Loss 1.4984 | F    3.55 | t=5s
+  Ep  270 | R    83.3 | Avg100   -57.5 | Eps 0.465 | Loss 1.4027 | F    1.40 | t=6s
+  Ep  280 | R    57.2 | Avg100   -46.8 | Eps 0.446 | Loss 1.3523 | F    4.13 | t=7s
+  Ep  290 | R  -240.1 | Avg100   -38.6 | Eps 0.426 | Loss 1.6162 | F    6.32 | t=8s
+  Ep  300 | R   -55.1 | Avg100   -32.2 | Eps 0.406 | Loss 1.2979 | F    6.74 | t=9s
+  Ep  310 | R   -39.5 | Avg100   -29.8 | Eps 0.386 | Loss 1.1870 | F    3.83 | t=10s
+  Ep  320 | R    -8.5 | Avg100   -25.5 | Eps 0.366 | Loss 1.2386 | F    4.05 | t=11s
+  Ep  330 | R   -46.7 | Avg100   -25.2 | Eps 0.347 | Loss 1.2568 | F    4.42 | t=12s
+  Ep  340 | R    73.6 | Avg100   -20.8 | Eps 0.327 | Loss 1.2131 | F    4.62 | t=14s
+  Ep  350 | R   -57.2 | Avg100    -9.8 | Eps 0.307 | Loss 1.0757 | F   14.30 | t=15s
+  Ep  360 | R   -41.9 | Avg100   -12.7 | Eps 0.287 | Loss 1.1274 | F    8.36 | t=17s
+  Ep  370 | R   -93.8 | Avg100   -15.9 | Eps 0.267 | Loss 0.8001 | F    4.68 | t=18s
+  Ep  380 | R   -49.0 | Avg100    -8.9 | Eps 0.248 | Loss 0.7988 | F    9.09 | t=19s
+  Ep  390 | R   -96.6 | Avg100    -9.7 | Eps 0.228 | Loss 0.7201 | F    9.20 | t=21s
+  Ep  400 | R   -33.7 | Avg100    -5.6 | Eps 0.208 | Loss 0.6887 | F    5.85 | t=22s
+  Ep  410 | R   -47.3 | Avg100     4.1 | Eps 0.188 | Loss 0.6021 | F   10.07 | t=23s
+  Ep  420 | R    -2.7 | Avg100    10.3 | Eps 0.168 | Loss 0.5503 | F    9.39 | t=25s
+  Ep  430 | R   124.6 | Avg100    18.8 | Eps 0.149 | Loss 0.4795 | F    4.28 | t=26s
+  Ep  440 | R   -54.9 | Avg100    31.4 | Eps 0.129 | Loss 0.4791 | F    6.61 | t=28s
+  Ep  450 | R   242.8 | Avg100    47.8 | Eps 0.109 | Loss 0.4280 | F    4.27 | t=29s
+  Ep  460 | R   -71.0 | Avg100    63.9 | Eps 0.089 | Loss 0.4618 | F    6.81 | t=30s
+  Ep  470 | R   214.2 | Avg100    78.5 | Eps 0.069 | Loss 0.4380 | F    3.18 | t=31s
+  Ep  480 | R   203.1 | Avg100    86.7 | Eps 0.050 | Loss 0.4030 | F    4.31 | t=31s
+  Ep  490 | R   178.7 | Avg100   103.3 | Eps 0.030 | Loss 0.4387 | F    5.63 | t=33s
+  Ep  500 | R   269.9 | Avg100   115.5 | Eps 0.010 | Loss 0.4601 | F    3.96 | t=34s
+  Ep  510 | R   178.9 | Avg100   122.5 | Eps 0.010 | Loss 0.4375 | F    4.62 | t=35s
+  Ep  520 | R   147.1 | Avg100   133.0 | Eps 0.010 | Loss 0.3663 | F    4.22 | t=36s
+  Ep  530 | R   225.3 | Avg100   144.8 | Eps 0.010 | Loss 0.3806 | F    4.43 | t=37s
+  Ep  540 | R    13.3 | Avg100   145.2 | Eps 0.010 | Loss 0.3993 | F    7.63 | t=38s
+  Ep  550 | R   259.3 | Avg100   145.0 | Eps 0.010 | Loss 0.4074 | F    3.26 | t=39s
+  Ep  560 | R   194.5 | Avg100   149.4 | Eps 0.010 | Loss 0.4307 | F    3.98 | t=40s
+  Ep  570 | R   243.9 | Avg100   156.1 | Eps 0.010 | Loss 0.3691 | F    4.38 | t=41s
+  Ep  580 | R   155.1 | Avg100   159.3 | Eps 0.010 | Loss 0.3814 | F    4.01 | t=42s
+  Ep  590 | R   155.9 | Avg100   162.6 | Eps 0.010 | Loss 0.3643 | F    4.81 | t=43s
+  Ep  600 | R   176.0 | Avg100   165.0 | Eps 0.010 | Loss 0.3738 | F    5.89 | t=44s
+  Ep  610 | R   202.7 | Avg100   168.6 | Eps 0.010 | Loss 0.2821 | F    3.92 | t=45s
+  Ep  620 | R   245.3 | Avg100   167.6 | Eps 0.010 | Loss 0.3625 | F    4.25 | t=47s
+  Ep  630 | R   231.1 | Avg100   173.0 | Eps 0.010 | Loss 0.3306 | F    3.11 | t=47s
+  Ep  640 | R   217.2 | Avg100   176.7 | Eps 0.010 | Loss 0.2716 | F    4.60 | t=48s
+  Ep  650 | R   166.9 | Avg100   178.1 | Eps 0.010 | Loss 0.3665 | F    4.51 | t=49s
+  Ep  660 | R   181.4 | Avg100   179.6 | Eps 0.010 | Loss 0.4040 | F    5.00 | t=50s
+  Ep  670 | R   249.8 | Avg100   178.3 | Eps 0.010 | Loss 0.2576 | F    4.17 | t=51s
+  Ep  680 | R   250.8 | Avg100   177.2 | Eps 0.010 | Loss 0.4908 | F    3.29 | t=52s
+  Ep  690 | R   235.8 | Avg100   180.0 | Eps 0.010 | Loss 0.3091 | F    3.00 | t=53s
+  Ep  700 | R   185.4 | Avg100   186.8 | Eps 0.010 | Loss 0.4087 | F    4.13 | t=54s
+  Ep  710 | R   -35.2 | Avg100   190.9 | Eps 0.010 | Loss 0.4006 | F    5.12 | t=54s
+  Ep  720 | R   273.2 | Avg100   195.1 | Eps 0.010 | Loss 0.3956 | F    3.46 | t=55s
+  Ep  730 | R   268.1 | Avg100   196.4 | Eps 0.010 | Loss 0.3963 | F    4.43 | t=56s
+  Ep  740 | R   234.4 | Avg100   194.8 | Eps 0.010 | Loss 0.3756 | F    3.39 | t=57s
+  Ep  750 | R   254.6 | Avg100   195.4 | Eps 0.010 | Loss 0.2845 | F    3.45 | t=58s
+  Ep  760 | R   222.1 | Avg100   189.8 | Eps 0.010 | Loss 0.3587 | F    4.06 | t=58s
+  Ep  770 | R   235.0 | Avg100   193.4 | Eps 0.010 | Loss 0.3856 | F    3.12 | t=59s
+  Ep  780 | R   236.8 | Avg100   198.0 | Eps 0.010 | Loss 0.4044 | F    3.45 | t=60s
+  Ep  790 | R   244.0 | Avg100   199.9 | Eps 0.010 | Loss 0.3147 | F    3.21 | t=61s
+  Ep  800 | R   225.8 | Avg100   200.9 | Eps 0.010 | Loss 0.4768 | F    4.17 | t=61s
+  Ep  810 | R   170.9 | Avg100   198.8 | Eps 0.010 | Loss 0.4378 | F    3.63 | t=62s
+  Ep  820 | R   217.2 | Avg100   202.6 | Eps 0.010 | Loss 0.4217 | F    4.06 | t=63s
+  Ep  830 | R   -10.0 | Avg100   198.8 | Eps 0.010 | Loss 0.4323 | F    4.14 | t=63s
+  Ep  840 | R   278.0 | Avg100   208.9 | Eps 0.010 | Loss 0.5384 | F    5.27 | t=64s
+  Ep  850 | R   259.1 | Avg100   212.8 | Eps 0.010 | Loss 0.2554 | F    3.23 | t=65s
+  Ep  860 | R   160.5 | Avg100   216.2 | Eps 0.010 | Loss 0.3224 | F    4.30 | t=65s
+  Ep  870 | R   201.9 | Avg100   221.4 | Eps 0.010 | Loss 0.4420 | F    4.01 | t=66s
+  Ep  880 | R   245.7 | Avg100   225.9 | Eps 0.010 | Loss 0.4651 | F    3.39 | t=66s
+  Ep  890 | R   297.5 | Avg100   226.7 | Eps 0.010 | Loss 0.4209 | F    3.53 | t=67s
+  Ep  900 | R   245.2 | Avg100   223.5 | Eps 0.010 | Loss 0.5338 | F    3.86 | t=68s
+  Ep  910 | R   290.0 | Avg100   227.1 | Eps 0.010 | Loss 0.4283 | F    3.50 | t=68s
+  Ep  920 | R   254.7 | Avg100   228.6 | Eps 0.010 | Loss 0.4026 | F    3.04 | t=69s
+  Ep  930 | R   246.4 | Avg100   233.4 | Eps 0.010 | Loss 0.4804 | F    3.47 | t=69s
+  Ep  940 | R   287.0 | Avg100   233.3 | Eps 0.010 | Loss 0.4381 | F    3.24 | t=70s
+  Ep  950 | R   258.4 | Avg100   237.0 | Eps 0.010 | Loss 0.5282 | F    2.97 | t=70s
+  Ep  960 | R   261.7 | Avg100   245.8 | Eps 0.010 | Loss 0.6259 | F    3.83 | t=71s
+  Ep  970 | R   242.9 | Avg100   246.0 | Eps 0.010 | Loss 0.5552 | F    4.08 | t=72s
+  Ep  980 | R   272.9 | Avg100   246.3 | Eps 0.010 | Loss 0.5275 | F    4.13 | t=72s
+  Ep  990 | R   180.0 | Avg100   246.3 | Eps 0.010 | Loss 0.5982 | F    4.45 | t=73s
+  Ep 1000 | R   293.5 | Avg100   250.4 | Eps 0.010 | Loss 0.6742 | F    3.45 | t=73s
+
+  Done. Log saved to logs/double_shaping_seed1.csv
+  Best 100-ep avg: 250.4
+
+[6/9] RUN  double_shaping seed=2
+
+=== Run: double_shaping_seed2 ===
+  Double DQN:         True
+  Prioritized Replay: False
+  ICM (curiosity):    False
+  Reward shaping:     True
+
+  Device: cpu
+  Ep   10 | R  -152.5 | Avg100  -180.0 | Eps 0.980 | Loss 2.4056 | F    3.22 | t=0s
+  Ep   20 | R  -217.4 | Avg100  -178.5 | Eps 0.960 | Loss 1.9079 | F    1.42 | t=0s
+  Ep   30 | R  -247.3 | Avg100  -173.8 | Eps 0.941 | Loss 1.4769 | F    2.34 | t=0s
+  Ep   40 | R  -149.5 | Avg100  -177.7 | Eps 0.921 | Loss 1.1229 | F    1.52 | t=1s
+  Ep   50 | R   -77.4 | Avg100  -170.1 | Eps 0.901 | Loss 1.0223 | F    3.18 | t=1s
+  Ep   60 | R  -202.5 | Avg100  -167.7 | Eps 0.881 | Loss 1.3553 | F    3.72 | t=1s
+  Ep   70 | R   -97.2 | Avg100  -170.2 | Eps 0.861 | Loss 1.2726 | F    2.06 | t=1s
+  Ep   80 | R  -228.2 | Avg100  -168.9 | Eps 0.842 | Loss 1.2381 | F    1.86 | t=1s
+  Ep   90 | R  -148.6 | Avg100  -163.8 | Eps 0.822 | Loss 1.3077 | F    2.19 | t=1s
+  Ep  100 | R  -434.1 | Avg100  -164.9 | Eps 0.802 | Loss 1.2401 | F    1.24 | t=1s
+  Ep  110 | R  -214.4 | Avg100  -163.8 | Eps 0.782 | Loss 1.4760 | F    2.84 | t=2s
+  Ep  120 | R   -44.8 | Avg100  -156.7 | Eps 0.762 | Loss 1.2682 | F    3.02 | t=2s
+  Ep  130 | R   -64.7 | Avg100  -153.2 | Eps 0.743 | Loss 1.2669 | F    2.91 | t=2s
+  Ep  140 | R   -86.4 | Avg100  -146.5 | Eps 0.723 | Loss 1.0150 | F    3.13 | t=2s
+  Ep  150 | R   -80.6 | Avg100  -147.2 | Eps 0.703 | Loss 1.2466 | F    2.62 | t=2s
+  Ep  160 | R   -82.1 | Avg100  -141.6 | Eps 0.683 | Loss 1.3440 | F    3.80 | t=3s
+  Ep  170 | R    20.4 | Avg100  -131.6 | Eps 0.663 | Loss 1.5431 | F    3.44 | t=3s
+  Ep  180 | R   -89.2 | Avg100  -124.9 | Eps 0.644 | Loss 1.2031 | F    2.94 | t=3s
+  Ep  190 | R  -252.1 | Avg100  -121.3 | Eps 0.624 | Loss 1.0837 | F    3.41 | t=3s
+  Ep  200 | R   -17.8 | Avg100  -111.1 | Eps 0.604 | Loss 0.8772 | F    4.39 | t=3s
+  Ep  210 | R  -116.9 | Avg100  -104.1 | Eps 0.584 | Loss 1.4423 | F    2.34 | t=4s
+  Ep  220 | R   -72.0 | Avg100  -103.9 | Eps 0.564 | Loss 1.0986 | F    3.05 | t=4s
+  Ep  230 | R   -45.9 | Avg100   -98.0 | Eps 0.545 | Loss 1.2757 | F    3.77 | t=4s
+  Ep  240 | R    27.6 | Avg100   -91.7 | Eps 0.525 | Loss 1.0811 | F    4.71 | t=5s
+  Ep  250 | R    66.1 | Avg100   -81.8 | Eps 0.505 | Loss 1.0913 | F    2.18 | t=5s
+  Ep  260 | R   -90.4 | Avg100   -78.8 | Eps 0.485 | Loss 1.0346 | F    6.57 | t=5s
+  Ep  270 | R    31.1 | Avg100   -73.5 | Eps 0.465 | Loss 1.1304 | F    3.65 | t=6s
+  Ep  280 | R   -74.0 | Avg100   -67.7 | Eps 0.446 | Loss 1.2807 | F    3.72 | t=6s
+  Ep  290 | R    64.9 | Avg100   -60.0 | Eps 0.426 | Loss 1.0321 | F    5.29 | t=7s
+  Ep  300 | R     8.8 | Avg100   -52.3 | Eps 0.406 | Loss 0.9540 | F    3.80 | t=8s
+  Ep  310 | R   -20.1 | Avg100   -41.2 | Eps 0.386 | Loss 1.0022 | F    9.49 | t=9s
+  Ep  320 | R   -33.3 | Avg100   -30.9 | Eps 0.366 | Loss 0.9787 | F    9.12 | t=10s
+  Ep  330 | R   -31.0 | Avg100   -23.2 | Eps 0.347 | Loss 0.9926 | F    4.56 | t=11s
+  Ep  340 | R   -28.1 | Avg100   -18.5 | Eps 0.327 | Loss 0.9600 | F    6.91 | t=13s
+  Ep  350 | R   -72.8 | Avg100   -14.6 | Eps 0.307 | Loss 0.9363 | F   10.65 | t=15s
+  Ep  360 | R  -220.8 | Avg100   -18.0 | Eps 0.287 | Loss 1.0319 | F    9.81 | t=16s
+  Ep  370 | R   -67.9 | Avg100   -21.8 | Eps 0.267 | Loss 0.9439 | F    9.47 | t=17s
+  Ep  380 | R    18.5 | Avg100   -16.0 | Eps 0.248 | Loss 0.8871 | F    2.41 | t=19s
+  Ep  390 | R    -8.8 | Avg100   -18.6 | Eps 0.228 | Loss 0.7635 | F    5.41 | t=20s
+  Ep  400 | R   -67.7 | Avg100   -22.1 | Eps 0.208 | Loss 0.7157 | F    9.27 | t=21s
+  Ep  410 | R   293.5 | Avg100   -26.0 | Eps 0.188 | Loss 0.6368 | F    3.10 | t=22s
+  Ep  420 | R    53.7 | Avg100   -24.1 | Eps 0.168 | Loss 0.5505 | F    4.96 | t=24s
+  Ep  430 | R   301.6 | Avg100   -20.0 | Eps 0.149 | Loss 0.5584 | F    2.25 | t=25s
+  Ep  440 | R    16.7 | Avg100   -17.0 | Eps 0.129 | Loss 0.5196 | F    3.31 | t=27s
+  Ep  450 | R   -38.6 | Avg100   -14.2 | Eps 0.109 | Loss 0.4682 | F    8.92 | t=28s
+  Ep  460 | R   -55.9 | Avg100    -1.6 | Eps 0.089 | Loss 0.4738 | F    6.38 | t=30s
+  Ep  470 | R   206.3 | Avg100     9.8 | Eps 0.069 | Loss 0.4521 | F    3.19 | t=31s
+  Ep  480 | R   213.2 | Avg100    14.3 | Eps 0.050 | Loss 0.4609 | F    2.96 | t=32s
+  Ep  490 | R   205.8 | Avg100    29.0 | Eps 0.030 | Loss 0.4387 | F    4.40 | t=33s
+  Ep  500 | R    -5.9 | Avg100    35.4 | Eps 0.010 | Loss 0.4621 | F   10.26 | t=34s
+  Ep  510 | R   154.5 | Avg100    55.0 | Eps 0.010 | Loss 0.3918 | F    4.91 | t=35s
+  Ep  520 | R    24.7 | Avg100    60.2 | Eps 0.010 | Loss 0.3735 | F    5.21 | t=36s
+  Ep  530 | R   216.3 | Avg100    66.8 | Eps 0.010 | Loss 0.3904 | F    6.93 | t=37s
+  Ep  540 | R   127.0 | Avg100    81.6 | Eps 0.010 | Loss 0.3824 | F    4.18 | t=38s
+  Ep  550 | R   211.1 | Avg100    95.7 | Eps 0.010 | Loss 0.4265 | F    3.04 | t=39s
+  Ep  560 | R   275.9 | Avg100   105.2 | Eps 0.010 | Loss 0.4638 | F    3.34 | t=40s
+  Ep  570 | R   210.0 | Avg100   112.8 | Eps 0.010 | Loss 0.3836 | F    3.31 | t=41s
+  Ep  580 | R   151.1 | Avg100   120.0 | Eps 0.010 | Loss 0.3794 | F    3.85 | t=42s
+  Ep  590 | R   200.3 | Avg100   123.6 | Eps 0.010 | Loss 0.4060 | F    3.43 | t=44s
+  Ep  600 | R   201.4 | Avg100   135.9 | Eps 0.010 | Loss 0.2914 | F    4.23 | t=45s
+  Ep  610 | R    18.4 | Avg100   131.6 | Eps 0.010 | Loss 0.3919 | F    5.64 | t=46s
+  Ep  620 | R    -8.4 | Avg100   139.0 | Eps 0.010 | Loss 0.3927 | F    4.83 | t=47s
+  Ep  630 | R   296.6 | Avg100   141.2 | Eps 0.010 | Loss 0.4174 | F    3.88 | t=48s
+  Ep  640 | R   228.6 | Avg100   139.1 | Eps 0.010 | Loss 0.3184 | F    4.88 | t=49s
+  Ep  650 | R   238.7 | Avg100   130.8 | Eps 0.010 | Loss 0.3445 | F    2.79 | t=51s
+  Ep  660 | R   254.1 | Avg100   130.7 | Eps 0.010 | Loss 0.3446 | F    2.74 | t=52s
+  Ep  670 | R   236.9 | Avg100   129.0 | Eps 0.010 | Loss 0.3563 | F    3.07 | t=53s
+  Ep  680 | R   256.6 | Avg100   126.1 | Eps 0.010 | Loss 0.3427 | F    4.28 | t=54s
+  Ep  690 | R   246.8 | Avg100   123.9 | Eps 0.010 | Loss 0.3225 | F    3.14 | t=55s
+  Ep  700 | R   238.4 | Avg100   122.2 | Eps 0.010 | Loss 0.2263 | F    4.12 | t=56s
+  Ep  710 | R    14.2 | Avg100   126.1 | Eps 0.010 | Loss 0.3755 | F    5.55 | t=57s
+  Ep  720 | R   181.0 | Avg100   125.5 | Eps 0.010 | Loss 0.2856 | F    4.47 | t=58s
+  Ep  730 | R   251.1 | Avg100   128.0 | Eps 0.010 | Loss 0.3647 | F    3.46 | t=59s
+  Ep  740 | R   191.0 | Avg100   130.4 | Eps 0.010 | Loss 0.2930 | F    5.41 | t=60s
+  Ep  750 | R   250.9 | Avg100   136.9 | Eps 0.010 | Loss 0.3529 | F    3.53 | t=61s
+  Ep  760 | R   -29.0 | Avg100   136.5 | Eps 0.010 | Loss 0.2800 | F    6.11 | t=62s
+  Ep  770 | R   213.6 | Avg100   142.2 | Eps 0.010 | Loss 0.3165 | F    2.37 | t=63s
+  Ep  780 | R    -7.1 | Avg100   150.6 | Eps 0.010 | Loss 0.3503 | F    4.94 | t=64s
+  Ep  790 | R   244.0 | Avg100   152.1 | Eps 0.010 | Loss 0.3807 | F    3.28 | t=65s
+  Ep  800 | R   -22.0 | Avg100   156.0 | Eps 0.010 | Loss 0.3018 | F    4.15 | t=66s
+  Ep  810 | R    13.7 | Avg100   157.2 | Eps 0.010 | Loss 0.3660 | F    6.41 | t=67s
+  Ep  820 | R   183.4 | Avg100   158.7 | Eps 0.010 | Loss 0.3129 | F    5.81 | t=68s
+  Ep  830 | R    92.1 | Avg100   160.9 | Eps 0.010 | Loss 0.3159 | F    2.75 | t=69s
+  Ep  840 | R   249.0 | Avg100   162.1 | Eps 0.010 | Loss 0.3276 | F    3.69 | t=70s
+  Ep  850 | R    10.0 | Avg100   167.0 | Eps 0.010 | Loss 0.2974 | F    5.34 | t=71s
+  Ep  860 | R   251.1 | Avg100   175.6 | Eps 0.010 | Loss 0.2665 | F    3.45 | t=72s
+  Ep  870 | R   233.3 | Avg100   179.0 | Eps 0.010 | Loss 0.2933 | F    3.05 | t=73s
+  Ep  880 | R   299.9 | Avg100   181.2 | Eps 0.010 | Loss 0.3114 | F    3.88 | t=73s
+  Ep  890 | R   237.2 | Avg100   191.4 | Eps 0.010 | Loss 0.2713 | F    2.28 | t=74s
+  Ep  900 | R   207.1 | Avg100   197.9 | Eps 0.010 | Loss 0.2926 | F    4.36 | t=75s
+  Ep  910 | R   219.8 | Avg100   203.8 | Eps 0.010 | Loss 0.3008 | F    4.68 | t=75s
+  Ep  920 | R   249.2 | Avg100   214.3 | Eps 0.010 | Loss 0.3536 | F    3.44 | t=76s
+  Ep  930 | R   252.5 | Avg100   219.0 | Eps 0.010 | Loss 0.3250 | F    2.92 | t=77s
+  Ep  940 | R    26.7 | Avg100   223.0 | Eps 0.010 | Loss 0.2979 | F    7.40 | t=77s
+  Ep  950 | R   239.5 | Avg100   225.3 | Eps 0.010 | Loss 0.3878 | F    3.16 | t=79s
+  Ep  960 | R   244.4 | Avg100   230.2 | Eps 0.010 | Loss 0.3383 | F    3.79 | t=79s
+  Ep  970 | R   260.8 | Avg100   233.8 | Eps 0.010 | Loss 0.2772 | F    4.32 | t=80s
+  Ep  980 | R   245.8 | Avg100   237.0 | Eps 0.010 | Loss 0.2403 | F    3.44 | t=81s
+  Ep  990 | R   266.0 | Avg100   236.5 | Eps 0.010 | Loss 0.3527 | F    3.63 | t=81s
+  Ep 1000 | R   108.4 | Avg100   235.8 | Eps 0.010 | Loss 0.4169 | F    3.47 | t=82s
+
+  Done. Log saved to logs/double_shaping_seed2.csv
+  Best 100-ep avg: 238.3
+
+[7/9] RUN  double_icm_shaping seed=0
+
+=== Run: double_icm_shaping_seed0 ===
+  Double DQN:         True
+  Prioritized Replay: False
+  ICM (curiosity):    True
+  Reward shaping:     True
+
+  Device: cpu
+  Ep   10 | R  -247.7 | Avg100  -190.3 | Eps 0.980 | Loss 2.2127 | r_int   0.16 | F    1.44 | t=0s
+  Ep   20 | R  -242.4 | Avg100  -167.6 | Eps 0.960 | Loss 2.3701 | r_int   0.44 | F    1.64 | t=1s
+  Ep   30 | R  -306.9 | Avg100  -178.6 | Eps 0.941 | Loss 1.7122 | r_int   5.03 | F    1.52 | t=1s
+  Ep   40 | R   -80.6 | Avg100  -181.8 | Eps 0.921 | Loss 1.5065 | r_int   1.60 | F    2.43 | t=2s
+  Ep   50 | R  -157.8 | Avg100  -173.1 | Eps 0.901 | Loss 1.5615 | r_int  12.32 | F    2.13 | t=2s
+  Ep   60 | R   -57.7 | Avg100  -163.5 | Eps 0.881 | Loss 1.7967 | r_int   2.02 | F    3.65 | t=2s
+  Ep   70 | R  -112.0 | Avg100  -165.3 | Eps 0.861 | Loss 1.5661 | r_int  19.21 | F    2.62 | t=3s
+  Ep   80 | R   -98.6 | Avg100  -161.2 | Eps 0.842 | Loss 1.6733 | r_int  11.88 | F    2.74 | t=3s
+  Ep   90 | R   -84.3 | Avg100  -160.8 | Eps 0.822 | Loss 1.2668 | r_int  12.27 | F    2.66 | t=4s
+  Ep  100 | R   -51.0 | Avg100  -160.0 | Eps 0.802 | Loss 1.4883 | r_int   0.99 | F    3.25 | t=4s
+  Ep  110 | R  -330.8 | Avg100  -157.8 | Eps 0.782 | Loss 1.7589 | r_int  10.21 | F    1.57 | t=5s
+  Ep  120 | R  -124.7 | Avg100  -154.9 | Eps 0.762 | Loss 1.3408 | r_int   1.30 | F    3.50 | t=5s
+  Ep  130 | R  -231.0 | Avg100  -149.4 | Eps 0.743 | Loss 1.4882 | r_int   3.11 | F    3.09 | t=6s
+  Ep  140 | R  -148.0 | Avg100  -142.8 | Eps 0.723 | Loss 1.2438 | r_int   5.03 | F    2.00 | t=6s
+  Ep  150 | R   -67.5 | Avg100  -139.6 | Eps 0.703 | Loss 1.1832 | r_int   2.95 | F    1.97 | t=7s
+  Ep  160 | R   -72.9 | Avg100  -138.1 | Eps 0.683 | Loss 1.6664 | r_int   4.38 | F    2.48 | t=8s
+  Ep  170 | R   -50.5 | Avg100  -131.8 | Eps 0.663 | Loss 1.6082 | r_int   2.17 | F    2.28 | t=8s
+  Ep  180 | R   -49.9 | Avg100  -129.8 | Eps 0.644 | Loss 1.4273 | r_int   1.97 | F    3.71 | t=9s
+  Ep  190 | R   -56.5 | Avg100  -123.7 | Eps 0.624 | Loss 1.2115 | r_int   8.04 | F    4.48 | t=9s
+  Ep  200 | R  -111.0 | Avg100  -116.1 | Eps 0.604 | Loss 1.0961 | r_int   5.09 | F    2.77 | t=10s
+  Ep  210 | R   -68.7 | Avg100  -106.3 | Eps 0.584 | Loss 1.3998 | r_int   4.86 | F    2.87 | t=10s
+  Ep  220 | R   -29.3 | Avg100  -103.5 | Eps 0.564 | Loss 1.3764 | r_int   6.65 | F    2.72 | t=11s
+  Ep  230 | R     6.1 | Avg100   -94.3 | Eps 0.545 | Loss 1.5010 | r_int  13.53 | F    4.21 | t=12s
+  Ep  240 | R   -34.2 | Avg100   -86.2 | Eps 0.525 | Loss 1.4701 | r_int   8.44 | F    3.79 | t=13s
+  Ep  250 | R   -78.4 | Avg100   -79.6 | Eps 0.505 | Loss 1.1362 | r_int   1.62 | F    3.03 | t=14s
+  Ep  260 | R    21.2 | Avg100   -72.9 | Eps 0.485 | Loss 1.6484 | r_int   7.61 | F    4.21 | t=15s
+  Ep  270 | R  -121.6 | Avg100   -67.3 | Eps 0.465 | Loss 1.3561 | r_int   2.57 | F    5.81 | t=16s
+  Ep  280 | R   119.8 | Avg100   -61.1 | Eps 0.446 | Loss 1.4785 | r_int 320.98 | F    0.85 | t=18s
+  Ep  290 | R     4.4 | Avg100   -49.1 | Eps 0.426 | Loss 1.6732 | r_int   5.77 | F    4.73 | t=20s
+  Ep  300 | R     6.7 | Avg100   -42.2 | Eps 0.406 | Loss 1.4670 | r_int   3.73 | F    5.07 | t=21s
+  Ep  310 | R   -43.4 | Avg100   -38.0 | Eps 0.386 | Loss 2.0418 | r_int   4.86 | F    4.21 | t=24s
+  Ep  320 | R    57.4 | Avg100   -30.4 | Eps 0.366 | Loss 1.3867 | r_int  55.28 | F   10.08 | t=27s
+  Ep  330 | R    -6.4 | Avg100   -27.1 | Eps 0.347 | Loss 1.3636 | r_int  18.90 | F    8.94 | t=31s
+  Ep  340 | R    67.7 | Avg100   -25.0 | Eps 0.327 | Loss 1.3233 | r_int  71.82 | F    3.96 | t=35s
+  Ep  350 | R  -100.1 | Avg100   -25.7 | Eps 0.307 | Loss 1.1287 | r_int   0.54 | F    3.15 | t=38s
+  Ep  360 | R   -59.7 | Avg100   -25.9 | Eps 0.287 | Loss 1.2624 | r_int   1.23 | F    7.62 | t=42s
+  Ep  370 | R   -34.5 | Avg100   -24.8 | Eps 0.267 | Loss 1.1162 | r_int   1.43 | F   12.07 | t=46s
+  Ep  380 | R   -77.3 | Avg100   -24.8 | Eps 0.248 | Loss 0.9356 | r_int   0.95 | F    7.55 | t=51s
+  Ep  390 | R   -55.6 | Avg100   -29.3 | Eps 0.228 | Loss 0.8340 | r_int   1.13 | F    8.11 | t=55s
+  Ep  400 | R   -40.5 | Avg100   -29.6 | Eps 0.208 | Loss 0.7042 | r_int   0.88 | F    6.28 | t=59s
+  Ep  410 | R   190.5 | Avg100   -22.7 | Eps 0.188 | Loss 0.5990 | r_int  49.21 | F    5.57 | t=63s
+  Ep  420 | R   -48.9 | Avg100   -22.8 | Eps 0.168 | Loss 0.4974 | r_int  12.06 | F    6.69 | t=67s
+  Ep  430 | R   -60.7 | Avg100   -22.1 | Eps 0.149 | Loss 0.4097 | r_int  10.33 | F    5.85 | t=71s
+  Ep  440 | R    56.8 | Avg100   -12.4 | Eps 0.129 | Loss 0.4228 | r_int  48.81 | F    7.54 | t=76s
+  Ep  450 | R    39.4 | Avg100    -3.2 | Eps 0.109 | Loss 0.4417 | r_int  13.79 | F   12.27 | t=80s
+  Ep  460 | R   -14.5 | Avg100     7.9 | Eps 0.089 | Loss 0.4478 | r_int   6.10 | F    5.86 | t=84s
+  Ep  470 | R   194.0 | Avg100    24.1 | Eps 0.069 | Loss 0.4539 | r_int  14.25 | F    3.97 | t=87s
+  Ep  480 | R   -43.4 | Avg100    35.7 | Eps 0.050 | Loss 0.4260 | r_int   1.72 | F    8.72 | t=91s
+  Ep  490 | R   223.0 | Avg100    51.9 | Eps 0.030 | Loss 0.4375 | r_int  12.33 | F    5.87 | t=94s
+  Ep  500 | R   175.3 | Avg100    66.8 | Eps 0.010 | Loss 0.4452 | r_int  17.41 | F    7.42 | t=98s
+  Ep  510 | R   235.9 | Avg100    70.4 | Eps 0.010 | Loss 0.5134 | r_int   1.89 | F    4.11 | t=102s
+  Ep  520 | R   -40.3 | Avg100    79.8 | Eps 0.010 | Loss 0.4650 | r_int   2.10 | F    4.28 | t=105s
+  Ep  530 | R   278.8 | Avg100    95.0 | Eps 0.010 | Loss 0.4638 | r_int   3.08 | F    3.44 | t=109s
+  Ep  540 | R    -2.5 | Avg100    96.9 | Eps 0.010 | Loss 0.4263 | r_int   2.59 | F    4.60 | t=112s
+  Ep  550 | R   262.9 | Avg100   101.5 | Eps 0.010 | Loss 0.3365 | r_int   2.01 | F    4.02 | t=116s
+  Ep  560 | R    -8.6 | Avg100   104.3 | Eps 0.010 | Loss 0.3761 | r_int   2.91 | F    4.30 | t=119s
+  Ep  570 | R   235.6 | Avg100   104.2 | Eps 0.010 | Loss 0.3769 | r_int   1.33 | F    2.98 | t=123s
+  Ep  580 | R   287.1 | Avg100   116.0 | Eps 0.010 | Loss 0.3337 | r_int   3.30 | F    3.42 | t=125s
+  Ep  590 | R   -64.5 | Avg100   121.1 | Eps 0.010 | Loss 0.2413 | r_int  11.50 | F    3.11 | t=127s
+  Ep  600 | R    22.1 | Avg100   116.8 | Eps 0.010 | Loss 0.3163 | r_int   3.40 | F    4.02 | t=131s
+  Ep  610 | R   256.0 | Avg100   123.6 | Eps 0.010 | Loss 0.3013 | r_int   3.85 | F    3.68 | t=133s
+  Ep  620 | R   152.5 | Avg100   127.1 | Eps 0.010 | Loss 0.2787 | r_int   3.98 | F    4.28 | t=137s
+  Ep  630 | R   253.6 | Avg100   129.5 | Eps 0.010 | Loss 0.2608 | r_int   1.95 | F    4.50 | t=140s
+  Ep  640 | R    -6.7 | Avg100   125.0 | Eps 0.010 | Loss 0.2306 | r_int   3.71 | F    3.83 | t=144s
+  Ep  650 | R   260.6 | Avg100   127.0 | Eps 0.010 | Loss 0.2163 | r_int   5.00 | F    3.96 | t=147s
+  Ep  660 | R   229.5 | Avg100   132.0 | Eps 0.010 | Loss 0.2151 | r_int   5.83 | F    4.08 | t=150s
+  Ep  670 | R    31.3 | Avg100   130.7 | Eps 0.010 | Loss 0.2395 | r_int   3.93 | F    5.77 | t=154s
+  Ep  680 | R   267.2 | Avg100   131.9 | Eps 0.010 | Loss 0.2936 | r_int   6.37 | F    3.82 | t=157s
+  Ep  690 | R    31.7 | Avg100   124.0 | Eps 0.010 | Loss 0.2298 | r_int   4.60 | F    6.91 | t=161s
+  Ep  700 | R   240.8 | Avg100   125.1 | Eps 0.010 | Loss 0.2449 | r_int   3.16 | F    4.19 | t=164s
+  Ep  710 | R   217.7 | Avg100   126.8 | Eps 0.010 | Loss 0.2582 | r_int  12.43 | F    5.05 | t=167s
+  Ep  720 | R   221.0 | Avg100   129.6 | Eps 0.010 | Loss 0.1899 | r_int   3.23 | F    3.90 | t=170s
+  Ep  730 | R   212.0 | Avg100   128.6 | Eps 0.010 | Loss 0.2586 | r_int   7.26 | F    3.55 | t=173s
+  Ep  740 | R   240.9 | Avg100   143.5 | Eps 0.010 | Loss 0.2810 | r_int  17.11 | F    3.61 | t=176s
+  Ep  750 | R   254.1 | Avg100   150.7 | Eps 0.010 | Loss 0.2016 | r_int   5.88 | F    3.13 | t=179s
+  Ep  760 | R   115.0 | Avg100   154.3 | Eps 0.010 | Loss 0.2825 | r_int  21.79 | F    3.98 | t=182s
+  Ep  770 | R   250.8 | Avg100   165.8 | Eps 0.010 | Loss 0.2562 | r_int   9.29 | F    4.90 | t=184s
+  Ep  780 | R   251.1 | Avg100   165.3 | Eps 0.010 | Loss 0.2310 | r_int  11.18 | F    3.67 | t=186s
+  Ep  790 | R   274.7 | Avg100   179.1 | Eps 0.010 | Loss 0.2956 | r_int   9.68 | F    5.06 | t=188s
+  Ep  800 | R   188.8 | Avg100   186.3 | Eps 0.010 | Loss 0.2710 | r_int   9.55 | F    3.75 | t=191s
+  Ep  810 | R   225.3 | Avg100   190.9 | Eps 0.010 | Loss 0.3357 | r_int   4.72 | F    3.95 | t=193s
+  Ep  820 | R   226.9 | Avg100   200.7 | Eps 0.010 | Loss 0.3627 | r_int  15.84 | F    3.82 | t=195s
+  Ep  830 | R   232.5 | Avg100   209.4 | Eps 0.010 | Loss 0.3576 | r_int   5.56 | F    3.50 | t=197s
+  Ep  840 | R   223.2 | Avg100   213.0 | Eps 0.010 | Loss 0.2999 | r_int   6.01 | F    3.11 | t=199s
+  Ep  850 | R   258.6 | Avg100   218.0 | Eps 0.010 | Loss 0.3595 | r_int   4.79 | F    3.17 | t=201s
+  Ep  860 | R   256.9 | Avg100   222.6 | Eps 0.010 | Loss 0.3529 | r_int   4.00 | F    4.08 | t=203s
+  Ep  870 | R   259.5 | Avg100   226.9 | Eps 0.010 | Loss 0.3969 | r_int   5.31 | F    3.38 | t=204s
+  Ep  880 | R   274.8 | Avg100   231.0 | Eps 0.010 | Loss 0.5580 | r_int   7.81 | F    3.31 | t=206s
+  Ep  890 | R   228.3 | Avg100   228.8 | Eps 0.010 | Loss 0.3156 | r_int  10.94 | F    7.64 | t=209s
+  Ep  900 | R   251.2 | Avg100   233.0 | Eps 0.010 | Loss 0.3869 | r_int   9.58 | F    5.38 | t=210s
+  Ep  910 | R   234.6 | Avg100   236.6 | Eps 0.010 | Loss 0.3113 | r_int   3.43 | F    3.76 | t=212s
+  Ep  920 | R   266.1 | Avg100   236.9 | Eps 0.010 | Loss 0.5157 | r_int  15.65 | F    4.16 | t=214s
+  Ep  930 | R   227.4 | Avg100   238.6 | Eps 0.010 | Loss 0.4617 | r_int   4.94 | F    3.44 | t=215s
+  Ep  940 | R   264.6 | Avg100   238.9 | Eps 0.010 | Loss 0.5069 | r_int   5.01 | F    4.47 | t=218s
+  Ep  950 | R   247.5 | Avg100   239.8 | Eps 0.010 | Loss 0.4120 | r_int   6.35 | F    4.66 | t=219s
+  Ep  960 | R   249.7 | Avg100   241.4 | Eps 0.010 | Loss 0.4193 | r_int   4.19 | F    3.68 | t=221s
+  Ep  970 | R   240.2 | Avg100   238.8 | Eps 0.010 | Loss 0.4954 | r_int  10.82 | F    4.93 | t=223s
+  Ep  980 | R   214.4 | Avg100   238.8 | Eps 0.010 | Loss 0.4998 | r_int  10.11 | F    3.99 | t=225s
+  Ep  990 | R   244.7 | Avg100   240.0 | Eps 0.010 | Loss 0.4232 | r_int   4.59 | F    3.69 | t=227s
+  Ep 1000 | R   167.4 | Avg100   241.8 | Eps 0.010 | Loss 0.4695 | r_int  15.00 | F    4.86 | t=229s
+
+  Done. Log saved to logs/double_icm_shaping_seed0.csv
+  Best 100-ep avg: 242.7
+
+[8/9] RUN  double_icm_shaping seed=1
+
+=== Run: double_icm_shaping_seed1 ===
+  Double DQN:         True
+  Prioritized Replay: False
+  ICM (curiosity):    True
+  Reward shaping:     True
+
+  Device: cpu
+  Ep   10 | R  -190.7 | Avg100  -215.6 | Eps 0.980 | Loss 1.5321 | r_int   0.76 | F    1.81 | t=0s
+  Ep   20 | R   -99.4 | Avg100  -173.4 | Eps 0.960 | Loss 1.4765 | r_int   4.07 | F    1.76 | t=1s
+  Ep   30 | R  -103.3 | Avg100  -147.7 | Eps 0.941 | Loss 1.1431 | r_int   2.28 | F    2.96 | t=1s
+  Ep   40 | R  -224.9 | Avg100  -142.7 | Eps 0.921 | Loss 1.8155 | r_int  18.88 | F    2.98 | t=2s
+  Ep   50 | R  -170.9 | Avg100  -137.9 | Eps 0.901 | Loss 1.4677 | r_int   2.80 | F    2.67 | t=2s
+  Ep   60 | R  -194.4 | Avg100  -138.3 | Eps 0.881 | Loss 1.4573 | r_int   8.88 | F    2.67 | t=2s
+  Ep   70 | R   -14.9 | Avg100  -132.8 | Eps 0.861 | Loss 1.3607 | r_int  16.15 | F    3.30 | t=3s
+  Ep   80 | R   -91.9 | Avg100  -127.9 | Eps 0.842 | Loss 1.3291 | r_int   4.04 | F    2.63 | t=3s
+  Ep   90 | R   -87.3 | Avg100  -132.0 | Eps 0.822 | Loss 1.7099 | r_int   4.34 | F    2.51 | t=4s
+  Ep  100 | R  -104.4 | Avg100  -129.7 | Eps 0.802 | Loss 1.1823 | r_int   1.40 | F    2.80 | t=4s
+  Ep  110 | R  -215.1 | Avg100  -121.4 | Eps 0.782 | Loss 1.4976 | r_int  15.64 | F    2.93 | t=5s
+  Ep  120 | R  -227.3 | Avg100  -122.2 | Eps 0.762 | Loss 1.6832 | r_int   4.19 | F    2.10 | t=5s
+  Ep  130 | R    -1.7 | Avg100  -122.7 | Eps 0.743 | Loss 1.4608 | r_int   5.42 | F    2.27 | t=6s
+  Ep  140 | R   -98.8 | Avg100  -119.2 | Eps 0.723 | Loss 1.2607 | r_int   0.95 | F    2.52 | t=6s
+  Ep  150 | R   -63.5 | Avg100  -119.7 | Eps 0.703 | Loss 1.3354 | r_int   3.95 | F    2.79 | t=7s
+  Ep  160 | R  -104.7 | Avg100  -115.5 | Eps 0.683 | Loss 1.7489 | r_int   6.46 | F    3.94 | t=7s
+  Ep  170 | R  -105.6 | Avg100  -117.3 | Eps 0.663 | Loss 1.7200 | r_int   2.52 | F    2.44 | t=8s
+  Ep  180 | R   -75.3 | Avg100  -117.4 | Eps 0.644 | Loss 1.2158 | r_int   2.15 | F    4.10 | t=8s
+  Ep  190 | R  -101.7 | Avg100  -113.8 | Eps 0.624 | Loss 1.4563 | r_int   2.50 | F    2.39 | t=9s
+  Ep  200 | R  -201.8 | Avg100  -111.6 | Eps 0.604 | Loss 1.4579 | r_int   5.79 | F    3.18 | t=10s
+  Ep  210 | R   -38.2 | Avg100  -109.8 | Eps 0.584 | Loss 1.1789 | r_int   4.24 | F    3.77 | t=10s
+  Ep  220 | R   -85.0 | Avg100  -103.8 | Eps 0.564 | Loss 1.3241 | r_int   9.23 | F    2.16 | t=11s
+  Ep  230 | R   -69.8 | Avg100  -100.7 | Eps 0.545 | Loss 1.2461 | r_int   2.57 | F    3.68 | t=12s
+  Ep  240 | R    46.5 | Avg100   -96.3 | Eps 0.525 | Loss 1.5985 | r_int   4.51 | F    4.80 | t=14s
+  Ep  250 | R     5.8 | Avg100   -85.1 | Eps 0.505 | Loss 1.3050 | r_int   2.68 | F    3.53 | t=15s
+  Ep  260 | R   -44.3 | Avg100   -76.5 | Eps 0.485 | Loss 1.5190 | r_int   1.87 | F    3.13 | t=17s
+  Ep  270 | R  -183.5 | Avg100   -69.4 | Eps 0.465 | Loss 1.3986 | r_int   7.78 | F    4.91 | t=18s
+  Ep  280 | R    78.2 | Avg100   -63.1 | Eps 0.446 | Loss 1.2799 | r_int 108.80 | F    6.21 | t=21s
+  Ep  290 | R   -16.1 | Avg100   -50.5 | Eps 0.426 | Loss 1.5101 | r_int   2.98 | F    3.03 | t=23s
+  Ep  300 | R   -11.6 | Avg100   -43.9 | Eps 0.406 | Loss 1.5014 | r_int   3.73 | F    2.91 | t=26s
+  Ep  310 | R   -24.4 | Avg100   -31.9 | Eps 0.386 | Loss 1.2446 | r_int   7.54 | F    3.45 | t=28s
+  Ep  320 | R     2.8 | Avg100   -23.5 | Eps 0.366 | Loss 1.2396 | r_int   6.96 | F    4.83 | t=32s
+  Ep  330 | R    36.5 | Avg100   -20.7 | Eps 0.347 | Loss 1.2826 | r_int  58.53 | F    6.93 | t=36s
+  Ep  340 | R   138.9 | Avg100   -16.3 | Eps 0.327 | Loss 1.1214 | r_int 105.74 | F    1.61 | t=40s
+  Ep  350 | R   -73.6 | Avg100   -15.6 | Eps 0.307 | Loss 1.2504 | r_int   1.72 | F    7.85 | t=44s
+  Ep  360 | R    28.9 | Avg100   -15.7 | Eps 0.287 | Loss 1.0493 | r_int   4.29 | F    9.39 | t=48s
+  Ep  370 | R   118.2 | Avg100   -13.0 | Eps 0.267 | Loss 0.9527 | r_int  57.64 | F    1.80 | t=52s
+  Ep  380 | R   -32.8 | Avg100   -14.4 | Eps 0.248 | Loss 0.8179 | r_int   2.87 | F    8.31 | t=56s
+  Ep  390 | R   -46.2 | Avg100   -17.7 | Eps 0.228 | Loss 0.7148 | r_int   0.98 | F   10.41 | t=60s
+  Ep  400 | R   -46.8 | Avg100   -17.0 | Eps 0.208 | Loss 0.6818 | r_int   3.53 | F    5.12 | t=64s
+  Ep  410 | R    -6.4 | Avg100   -20.7 | Eps 0.188 | Loss 0.5808 | r_int   1.66 | F    8.08 | t=67s
+  Ep  420 | R    46.1 | Avg100   -22.8 | Eps 0.168 | Loss 0.5033 | r_int   6.19 | F    4.19 | t=71s
+  Ep  430 | R   138.4 | Avg100   -19.1 | Eps 0.149 | Loss 0.4511 | r_int   8.11 | F    4.52 | t=76s
+  Ep  440 | R   262.2 | Avg100   -15.2 | Eps 0.129 | Loss 0.4670 | r_int  15.09 | F    1.39 | t=79s
+  Ep  450 | R   -36.7 | Avg100    -9.7 | Eps 0.109 | Loss 0.4304 | r_int   1.87 | F    5.63 | t=83s
+  Ep  460 | R   262.9 | Avg100     7.2 | Eps 0.089 | Loss 0.4865 | r_int   9.34 | F    2.76 | t=86s
+  Ep  470 | R   -14.6 | Avg100    15.6 | Eps 0.069 | Loss 0.3801 | r_int   1.82 | F    5.35 | t=89s
+  Ep  480 | R   218.1 | Avg100    32.2 | Eps 0.050 | Loss 0.3478 | r_int   2.09 | F    3.38 | t=92s
+  Ep  490 | R   267.8 | Avg100    49.9 | Eps 0.030 | Loss 0.2774 | r_int   2.05 | F    3.39 | t=95s
+  Ep  500 | R   251.3 | Avg100    70.3 | Eps 0.010 | Loss 0.3070 | r_int   2.70 | F    3.59 | t=97s
+  Ep  510 | R   255.1 | Avg100    85.8 | Eps 0.010 | Loss 0.3305 | r_int   3.45 | F    3.69 | t=99s
+  Ep  520 | R   251.2 | Avg100   104.8 | Eps 0.010 | Loss 0.3755 | r_int   2.42 | F    3.89 | t=102s
+  Ep  530 | R   243.6 | Avg100   121.1 | Eps 0.010 | Loss 0.4037 | r_int   5.83 | F    4.53 | t=105s
+  Ep  540 | R   166.1 | Avg100   128.9 | Eps 0.010 | Loss 0.3439 | r_int   4.76 | F    5.03 | t=108s
+  Ep  550 | R   167.9 | Avg100   143.0 | Eps 0.010 | Loss 0.3643 | r_int   4.55 | F    7.03 | t=110s
+  Ep  560 | R   -47.9 | Avg100   143.2 | Eps 0.010 | Loss 0.3380 | r_int   1.62 | F    7.70 | t=113s
+  Ep  570 | R   -30.8 | Avg100   156.5 | Eps 0.010 | Loss 0.3531 | r_int   1.65 | F    5.62 | t=115s
+  Ep  580 | R   215.4 | Avg100   161.0 | Eps 0.010 | Loss 0.4089 | r_int   5.33 | F    3.98 | t=118s
+  Ep  590 | R   228.4 | Avg100   168.9 | Eps 0.010 | Loss 0.3807 | r_int   3.51 | F    4.40 | t=120s
+  Ep  600 | R   263.5 | Avg100   173.2 | Eps 0.010 | Loss 0.3440 | r_int   0.77 | F    3.39 | t=122s
+  Ep  610 | R   126.5 | Avg100   177.8 | Eps 0.010 | Loss 0.4034 | r_int   2.58 | F    6.22 | t=125s
+  Ep  620 | R   252.4 | Avg100   176.7 | Eps 0.010 | Loss 0.2565 | r_int   2.61 | F    4.18 | t=128s
+  Ep  630 | R   299.6 | Avg100   181.8 | Eps 0.010 | Loss 0.4025 | r_int   2.14 | F    4.05 | t=130s
+  Ep  640 | R   219.2 | Avg100   185.7 | Eps 0.010 | Loss 0.2687 | r_int   5.80 | F    4.38 | t=132s
+  Ep  650 | R   285.4 | Avg100   180.9 | Eps 0.010 | Loss 0.2755 | r_int  19.06 | F    4.09 | t=135s
+  Ep  660 | R   243.8 | Avg100   185.8 | Eps 0.010 | Loss 0.3850 | r_int   4.90 | F    3.53 | t=137s
+  Ep  670 | R   178.2 | Avg100   188.7 | Eps 0.010 | Loss 0.3652 | r_int   5.28 | F    4.59 | t=139s
+  Ep  680 | R   212.9 | Avg100   189.9 | Eps 0.010 | Loss 0.3468 | r_int   4.37 | F    3.75 | t=142s
+  Ep  690 | R    29.0 | Avg100   184.7 | Eps 0.010 | Loss 0.3722 | r_int   4.80 | F    7.68 | t=145s
+  Ep  700 | R   257.2 | Avg100   184.2 | Eps 0.010 | Loss 0.4447 | r_int   3.20 | F    3.19 | t=146s
+  Ep  710 | R   252.0 | Avg100   189.9 | Eps 0.010 | Loss 0.3152 | r_int   5.67 | F    4.59 | t=148s
+  Ep  720 | R   253.3 | Avg100   197.1 | Eps 0.010 | Loss 0.3700 | r_int   2.20 | F    3.52 | t=150s
+  Ep  730 | R   250.5 | Avg100   200.6 | Eps 0.010 | Loss 0.3039 | r_int   1.24 | F    3.48 | t=152s
+  Ep  740 | R   132.4 | Avg100   208.6 | Eps 0.010 | Loss 0.4009 | r_int  12.64 | F    3.26 | t=154s
+  Ep  750 | R   242.6 | Avg100   215.6 | Eps 0.010 | Loss 0.4256 | r_int   1.63 | F    3.82 | t=156s
+  Ep  760 | R   237.5 | Avg100   215.9 | Eps 0.010 | Loss 0.4040 | r_int   4.38 | F    4.08 | t=158s
+  Ep  770 | R   272.0 | Avg100   215.7 | Eps 0.010 | Loss 0.3090 | r_int   4.75 | F    3.29 | t=160s
+  Ep  780 | R   268.4 | Avg100   222.9 | Eps 0.010 | Loss 0.5327 | r_int   3.98 | F    3.75 | t=161s
+  Ep  790 | R   278.9 | Avg100   228.9 | Eps 0.010 | Loss 0.3467 | r_int   2.54 | F    3.11 | t=164s
+  Ep  800 | R   241.3 | Avg100   230.3 | Eps 0.010 | Loss 0.3292 | r_int   1.65 | F    3.29 | t=165s
+  Ep  810 | R   233.2 | Avg100   232.1 | Eps 0.010 | Loss 0.3540 | r_int   3.30 | F    3.68 | t=167s
+  Ep  820 | R   260.0 | Avg100   230.0 | Eps 0.010 | Loss 0.3777 | r_int   2.93 | F    3.36 | t=169s
+  Ep  830 | R   228.0 | Avg100   230.1 | Eps 0.010 | Loss 0.5306 | r_int   2.29 | F    3.36 | t=171s
+  Ep  840 | R   268.1 | Avg100   231.8 | Eps 0.010 | Loss 0.5349 | r_int   6.08 | F    3.90 | t=173s
+  Ep  850 | R   242.2 | Avg100   235.3 | Eps 0.010 | Loss 0.3704 | r_int   3.33 | F    5.25 | t=174s
+  Ep  860 | R   263.8 | Avg100   239.5 | Eps 0.010 | Loss 0.5049 | r_int   2.78 | F    3.67 | t=176s
+  Ep  870 | R   160.8 | Avg100   240.7 | Eps 0.010 | Loss 0.4302 | r_int  10.00 | F    1.65 | t=178s
+  Ep  880 | R   255.2 | Avg100   241.4 | Eps 0.010 | Loss 0.5508 | r_int   3.83 | F    3.60 | t=179s
+  Ep  890 | R   220.3 | Avg100   243.9 | Eps 0.010 | Loss 0.4607 | r_int  10.76 | F    2.59 | t=181s
+  Ep  900 | R   266.8 | Avg100   244.1 | Eps 0.010 | Loss 0.4419 | r_int   3.16 | F    3.92 | t=183s
+  Ep  910 | R   229.1 | Avg100   245.2 | Eps 0.010 | Loss 0.5778 | r_int   3.59 | F    3.58 | t=184s
+  Ep  920 | R   277.8 | Avg100   246.7 | Eps 0.010 | Loss 0.5019 | r_int   4.64 | F    4.88 | t=186s
+  Ep  930 | R   207.1 | Avg100   246.0 | Eps 0.010 | Loss 0.5564 | r_int  11.78 | F    3.64 | t=188s
+  Ep  940 | R   223.6 | Avg100   242.6 | Eps 0.010 | Loss 0.3878 | r_int   3.30 | F    2.93 | t=190s
+  Ep  950 | R   269.4 | Avg100   242.1 | Eps 0.010 | Loss 0.5370 | r_int   2.34 | F    4.07 | t=192s
+  Ep  960 | R   133.6 | Avg100   238.5 | Eps 0.010 | Loss 0.5269 | r_int  28.80 | F    3.60 | t=194s
+  Ep  970 | R   244.0 | Avg100   238.9 | Eps 0.010 | Loss 0.5325 | r_int   7.14 | F    3.82 | t=196s
+  Ep  980 | R   176.9 | Avg100   235.1 | Eps 0.010 | Loss 0.4713 | r_int   6.78 | F    3.18 | t=198s
+  Ep  990 | R   247.4 | Avg100   233.0 | Eps 0.010 | Loss 0.4505 | r_int  13.05 | F    3.39 | t=200s
+  Ep 1000 | R   214.9 | Avg100   232.8 | Eps 0.010 | Loss 0.4669 | r_int   9.46 | F    2.15 | t=202s
+
+  Done. Log saved to logs/double_icm_shaping_seed1.csv
+  Best 100-ep avg: 246.8
+
+[9/9] RUN  double_icm_shaping seed=2
+
+=== Run: double_icm_shaping_seed2 ===
+  Double DQN:         True
+  Prioritized Replay: False
+  ICM (curiosity):    True
+  Reward shaping:     True
+
+  Device: cpu
+  Ep   10 | R  -152.5 | Avg100  -180.0 | Eps 0.980 | Loss 2.4056 | r_int   0.21 | F    3.22 | t=0s
+  Ep   20 | R  -217.4 | Avg100  -178.5 | Eps 0.960 | Loss 1.9009 | r_int   3.41 | F    1.42 | t=1s
+  Ep   30 | R  -247.3 | Avg100  -173.8 | Eps 0.941 | Loss 1.4719 | r_int   8.55 | F    2.34 | t=1s
+  Ep   40 | R  -149.5 | Avg100  -177.7 | Eps 0.921 | Loss 1.1139 | r_int   3.44 | F    1.52 | t=2s
+  Ep   50 | R   -38.8 | Avg100  -169.5 | Eps 0.901 | Loss 1.2469 | r_int   2.65 | F    2.07 | t=2s
+  Ep   60 | R  -456.5 | Avg100  -171.1 | Eps 0.881 | Loss 1.3181 | r_int   2.87 | F    0.14 | t=2s
+  Ep   70 | R   -98.1 | Avg100  -165.7 | Eps 0.861 | Loss 1.4477 | r_int   4.90 | F    4.14 | t=3s
+  Ep   80 | R   -55.4 | Avg100  -164.2 | Eps 0.842 | Loss 1.6592 | r_int   5.13 | F    2.64 | t=3s
+  Ep   90 | R   -77.8 | Avg100  -162.7 | Eps 0.822 | Loss 1.7523 | r_int   1.91 | F    2.59 | t=4s
+  Ep  100 | R   -62.4 | Avg100  -160.6 | Eps 0.802 | Loss 1.0167 | r_int   3.91 | F    2.19 | t=4s
+  Ep  110 | R   -36.0 | Avg100  -154.0 | Eps 0.782 | Loss 1.5676 | r_int  10.59 | F    2.94 | t=5s
+  Ep  120 | R    -9.6 | Avg100  -147.0 | Eps 0.762 | Loss 1.5146 | r_int   6.89 | F    4.02 | t=6s
+  Ep  130 | R   -58.2 | Avg100  -141.6 | Eps 0.743 | Loss 1.2291 | r_int   6.02 | F    2.45 | t=6s
+  Ep  140 | R  -239.1 | Avg100  -138.8 | Eps 0.723 | Loss 1.2568 | r_int  11.81 | F    3.07 | t=7s
+  Ep  150 | R   -64.8 | Avg100  -137.0 | Eps 0.703 | Loss 1.2440 | r_int   5.32 | F    2.27 | t=7s
+  Ep  160 | R   -93.0 | Avg100  -129.2 | Eps 0.683 | Loss 1.2544 | r_int   1.70 | F    3.03 | t=8s
+  Ep  170 | R   -58.8 | Avg100  -123.2 | Eps 0.663 | Loss 1.2614 | r_int   7.40 | F    4.49 | t=8s
+  Ep  180 | R   -11.5 | Avg100  -117.2 | Eps 0.644 | Loss 1.4175 | r_int   6.07 | F    3.42 | t=9s
+  Ep  190 | R   -47.6 | Avg100  -111.5 | Eps 0.624 | Loss 1.6117 | r_int   2.77 | F    2.69 | t=10s
+  Ep  200 | R  -123.7 | Avg100  -104.3 | Eps 0.604 | Loss 1.4132 | r_int   5.02 | F    3.56 | t=10s
+  Ep  210 | R  -135.5 | Avg100  -101.9 | Eps 0.584 | Loss 1.1609 | r_int  13.00 | F    2.68 | t=11s
+  Ep  220 | R  -107.5 | Avg100   -99.4 | Eps 0.564 | Loss 1.2922 | r_int   2.50 | F    3.58 | t=11s
+  Ep  230 | R   -21.3 | Avg100   -96.1 | Eps 0.545 | Loss 1.3408 | r_int  12.48 | F    4.53 | t=12s
+  Ep  240 | R  -100.1 | Avg100   -90.3 | Eps 0.525 | Loss 1.2916 | r_int   5.50 | F    7.85 | t=13s
+  Ep  250 | R    12.4 | Avg100   -81.5 | Eps 0.505 | Loss 0.9562 | r_int   5.09 | F    4.15 | t=14s
+  Ep  260 | R  -105.8 | Avg100   -76.1 | Eps 0.485 | Loss 1.1692 | r_int   4.65 | F    4.57 | t=15s
+  Ep  270 | R  -119.8 | Avg100   -74.6 | Eps 0.465 | Loss 0.9822 | r_int   8.09 | F    2.89 | t=16s
+  Ep  280 | R   -39.6 | Avg100   -70.0 | Eps 0.446 | Loss 1.1691 | r_int  24.28 | F    6.29 | t=17s
+  Ep  290 | R   -38.8 | Avg100   -64.6 | Eps 0.426 | Loss 1.1817 | r_int   3.12 | F    5.23 | t=19s
+  Ep  300 | R   -66.0 | Avg100   -62.3 | Eps 0.406 | Loss 1.1372 | r_int   1.01 | F   13.09 | t=21s
+  Ep  310 | R   -73.7 | Avg100   -55.0 | Eps 0.386 | Loss 1.1540 | r_int   8.58 | F   10.84 | t=24s
+  Ep  320 | R    32.8 | Avg100   -46.5 | Eps 0.366 | Loss 1.1119 | r_int  37.02 | F    4.59 | t=26s
+  Ep  330 | R   -38.6 | Avg100   -43.3 | Eps 0.347 | Loss 1.1059 | r_int   2.90 | F    4.30 | t=29s
+  Ep  340 | R    18.2 | Avg100   -37.9 | Eps 0.327 | Loss 0.9414 | r_int  14.00 | F    6.59 | t=33s
+  Ep  350 | R   -33.2 | Avg100   -37.1 | Eps 0.307 | Loss 1.0049 | r_int   0.83 | F    8.50 | t=37s
+  Ep  360 | R   -88.9 | Avg100   -36.9 | Eps 0.287 | Loss 0.9626 | r_int   0.76 | F   10.70 | t=41s
+  Ep  370 | R   -76.8 | Avg100   -34.4 | Eps 0.267 | Loss 0.9736 | r_int   1.02 | F    8.99 | t=45s
+  Ep  380 | R   -91.0 | Avg100   -34.4 | Eps 0.248 | Loss 0.8001 | r_int   1.28 | F    9.20 | t=50s
+  Ep  390 | R   -29.5 | Avg100   -32.6 | Eps 0.228 | Loss 0.7394 | r_int   0.92 | F    7.77 | t=54s
+  Ep  400 | R   -49.6 | Avg100   -32.3 | Eps 0.208 | Loss 0.6395 | r_int   1.84 | F    6.94 | t=58s
+  Ep  410 | R   -64.0 | Avg100   -35.2 | Eps 0.188 | Loss 0.5842 | r_int   1.68 | F    4.65 | t=62s
+  Ep  420 | R   -78.5 | Avg100   -38.8 | Eps 0.168 | Loss 0.5220 | r_int   0.94 | F    6.21 | t=66s
+  Ep  430 | R   -22.9 | Avg100   -36.7 | Eps 0.149 | Loss 0.4184 | r_int   1.12 | F    5.70 | t=70s
+  Ep  440 | R    15.5 | Avg100   -30.7 | Eps 0.129 | Loss 0.3558 | r_int   8.58 | F    5.84 | t=74s
+  Ep  450 | R    50.4 | Avg100   -26.0 | Eps 0.109 | Loss 0.3361 | r_int   5.28 | F    5.47 | t=78s
+  Ep  460 | R    -6.8 | Avg100   -18.0 | Eps 0.089 | Loss 0.3380 | r_int   3.82 | F    4.19 | t=82s
+  Ep  470 | R    -7.2 | Avg100   -12.1 | Eps 0.069 | Loss 0.2846 | r_int   1.25 | F    5.92 | t=87s
+  Ep  480 | R    35.0 | Avg100    -1.5 | Eps 0.050 | Loss 0.2920 | r_int  23.97 | F    3.81 | t=91s
+  Ep  490 | R    74.5 | Avg100     3.1 | Eps 0.030 | Loss 0.2765 | r_int   6.12 | F    5.02 | t=95s
+  Ep  500 | R    16.3 | Avg100    10.1 | Eps 0.010 | Loss 0.2687 | r_int   6.00 | F    4.95 | t=99s
+  Ep  510 | R   176.5 | Avg100    24.0 | Eps 0.010 | Loss 0.2709 | r_int   4.08 | F    3.54 | t=103s
+  Ep  520 | R   154.2 | Avg100    37.3 | Eps 0.010 | Loss 0.2629 | r_int  12.05 | F    3.25 | t=107s
+  Ep  530 | R    17.6 | Avg100    48.1 | Eps 0.010 | Loss 0.2722 | r_int   8.38 | F    4.77 | t=111s
+  Ep  540 | R    17.9 | Avg100    49.7 | Eps 0.010 | Loss 0.2539 | r_int   1.98 | F    6.92 | t=115s
+  Ep  550 | R   216.9 | Avg100    60.9 | Eps 0.010 | Loss 0.2527 | r_int   2.61 | F    3.83 | t=117s
+  Ep  560 | R   204.6 | Avg100    71.0 | Eps 0.010 | Loss 0.3240 | r_int   6.71 | F    3.61 | t=121s
+  Ep  570 | R    -0.2 | Avg100    81.4 | Eps 0.010 | Loss 0.2822 | r_int   2.69 | F    6.02 | t=124s
+  Ep  580 | R   236.0 | Avg100    91.4 | Eps 0.010 | Loss 0.2479 | r_int  16.87 | F    5.77 | t=127s
+  Ep  590 | R    29.8 | Avg100   104.0 | Eps 0.010 | Loss 0.2883 | r_int   8.06 | F    4.92 | t=130s
+  Ep  600 | R   219.3 | Avg100   120.5 | Eps 0.010 | Loss 0.3389 | r_int   2.09 | F    3.44 | t=133s
+  Ep  610 | R    48.0 | Avg100   123.4 | Eps 0.010 | Loss 0.2929 | r_int   4.88 | F    4.40 | t=136s
+  Ep  620 | R   -12.4 | Avg100   127.4 | Eps 0.010 | Loss 0.2488 | r_int  20.13 | F    8.70 | t=139s
+  Ep  630 | R   209.4 | Avg100   138.8 | Eps 0.010 | Loss 0.2875 | r_int   7.16 | F    4.06 | t=141s
+  Ep  640 | R   243.2 | Avg100   154.7 | Eps 0.010 | Loss 0.2728 | r_int   2.51 | F    2.79 | t=144s
+  Ep  650 | R   230.0 | Avg100   160.7 | Eps 0.010 | Loss 0.3255 | r_int   6.13 | F    5.03 | t=146s
+  Ep  660 | R   273.9 | Avg100   168.7 | Eps 0.010 | Loss 0.3165 | r_int   6.67 | F    5.37 | t=149s
+  Ep  670 | R   214.0 | Avg100   178.0 | Eps 0.010 | Loss 0.3395 | r_int   6.02 | F    4.31 | t=151s
+  Ep  680 | R   197.5 | Avg100   186.0 | Eps 0.010 | Loss 0.2885 | r_int   4.91 | F    3.14 | t=153s
+  Ep  690 | R   192.5 | Avg100   194.3 | Eps 0.010 | Loss 0.3323 | r_int  20.51 | F    3.50 | t=155s
+  Ep  700 | R   180.0 | Avg100   197.7 | Eps 0.010 | Loss 0.3702 | r_int  19.94 | F    3.76 | t=157s
+  Ep  710 | R   206.2 | Avg100   207.9 | Eps 0.010 | Loss 0.4537 | r_int   5.93 | F    4.26 | t=159s
+  Ep  720 | R   195.0 | Avg100   206.8 | Eps 0.010 | Loss 0.4142 | r_int  15.34 | F    5.73 | t=162s
+  Ep  730 | R   233.3 | Avg100   202.8 | Eps 0.010 | Loss 0.4031 | r_int   8.83 | F    3.93 | t=165s
+  Ep  740 | R   273.7 | Avg100   207.2 | Eps 0.010 | Loss 0.3841 | r_int   5.38 | F    4.03 | t=167s
+  Ep  750 | R   252.2 | Avg100   208.3 | Eps 0.010 | Loss 0.4176 | r_int   7.41 | F    3.21 | t=169s
+  Ep  760 | R   187.4 | Avg100   204.1 | Eps 0.010 | Loss 0.4684 | r_int  13.59 | F    5.88 | t=172s
+  Ep  770 | R   272.5 | Avg100   201.1 | Eps 0.010 | Loss 0.4780 | r_int   5.27 | F    4.23 | t=175s
+  Ep  780 | R   223.0 | Avg100   202.3 | Eps 0.010 | Loss 0.4511 | r_int   4.15 | F    3.16 | t=177s
+  Ep  790 | R   222.2 | Avg100   202.2 | Eps 0.010 | Loss 0.4147 | r_int  13.55 | F    4.15 | t=179s
+  Ep  800 | R    -8.0 | Avg100   200.0 | Eps 0.010 | Loss 0.4068 | r_int  14.05 | F    4.30 | t=181s
+  Ep  810 | R   294.7 | Avg100   199.2 | Eps 0.010 | Loss 0.4030 | r_int   7.84 | F    4.48 | t=183s
+  Ep  820 | R   208.6 | Avg100   208.0 | Eps 0.010 | Loss 0.4000 | r_int  12.49 | F    5.87 | t=186s
+  Ep  830 | R   284.9 | Avg100   212.7 | Eps 0.010 | Loss 0.4232 | r_int  10.06 | F    4.12 | t=188s
+  Ep  840 | R   216.7 | Avg100   210.7 | Eps 0.010 | Loss 0.4800 | r_int  11.54 | F    3.68 | t=190s
+  Ep  850 | R   201.4 | Avg100   211.9 | Eps 0.010 | Loss 0.5505 | r_int   8.80 | F    3.86 | t=192s
+  Ep  860 | R   234.0 | Avg100   219.9 | Eps 0.010 | Loss 0.5205 | r_int   3.00 | F    3.29 | t=194s
+  Ep  870 | R   264.7 | Avg100   222.1 | Eps 0.010 | Loss 0.4650 | r_int   7.74 | F    3.51 | t=196s
+  Ep  880 | R   196.4 | Avg100   220.7 | Eps 0.010 | Loss 0.4020 | r_int  23.49 | F    3.88 | t=198s
+  Ep  890 | R   243.3 | Avg100   222.6 | Eps 0.010 | Loss 0.5922 | r_int   5.69 | F    3.36 | t=200s
+  Ep  900 | R   199.7 | Avg100   226.1 | Eps 0.010 | Loss 0.3998 | r_int  10.24 | F    3.13 | t=202s
+  Ep  910 | R   236.6 | Avg100   226.9 | Eps 0.010 | Loss 0.4560 | r_int   6.93 | F    4.03 | t=204s
+  Ep  920 | R   210.5 | Avg100   228.3 | Eps 0.010 | Loss 0.4544 | r_int  12.94 | F    3.42 | t=206s
+  Ep  930 | R   265.7 | Avg100   232.4 | Eps 0.010 | Loss 0.5734 | r_int  19.51 | F    3.18 | t=208s
+  Ep  940 | R   268.2 | Avg100   235.3 | Eps 0.010 | Loss 0.4589 | r_int   4.21 | F    3.41 | t=209s
+  Ep  950 | R   227.4 | Avg100   237.0 | Eps 0.010 | Loss 0.5088 | r_int  23.16 | F    3.58 | t=211s
+  Ep  960 | R   271.1 | Avg100   234.8 | Eps 0.010 | Loss 0.4335 | r_int  14.70 | F    3.67 | t=214s
+  Ep  970 | R   249.8 | Avg100   237.2 | Eps 0.010 | Loss 0.4721 | r_int   7.25 | F    3.15 | t=216s
+  Ep  980 | R   230.7 | Avg100   237.2 | Eps 0.010 | Loss 0.4747 | r_int   8.17 | F    3.53 | t=218s
+  Ep  990 | R   215.5 | Avg100   235.1 | Eps 0.010 | Loss 0.5628 | r_int   5.88 | F    3.28 | t=220s
+  Ep 1000 | R   249.5 | Avg100   231.9 | Eps 0.010 | Loss 0.4018 | r_int   3.36 | F    3.53 | t=221s
+
+  Done. Log saved to logs/double_icm_shaping_seed2.csv
+  Best 100-ep avg: 238.0
+
+=== Extensions ablation complete. ===
+
+Generate the full comparison plot:
+  python plot.py --variants vanilla double per double_per double_icm double_shaping double_icm_shaping --seeds 0 1 2 --out plots/full_ablation.png
