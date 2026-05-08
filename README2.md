@@ -1,7 +1,7 @@
 # CS 4320 Final Project — Deep RL on LunarLander-v3
 
 **Team 15**  
-Team members withheld for anonymous review.
+Team 15: Albert Yoshimoto, Sebastian Ochoa, Vanessa Chavez De La Rosa
 
 ## Project Overview
 
