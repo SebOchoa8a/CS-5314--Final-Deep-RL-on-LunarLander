@@ -137,7 +137,7 @@ class PrioritizedReplayBuffer:
         self.beta_frames = beta_frames
         self.epsilon = epsilon  # ensures nonzero probability for all transitions
         self.device = device
-        self.frame = 0  # for beta annealing
+        self.frame = 0  # for simulated annealing
 
         self.tree = SumTree(capacity)
         self.max_priority = 1.0  # new transitions get max priority so they're seen at least once

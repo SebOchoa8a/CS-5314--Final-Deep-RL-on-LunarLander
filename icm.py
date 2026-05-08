@@ -99,16 +99,13 @@ class ForwardModel(nn.Module):
         return self.net(torch.cat([z_t, a_onehot], dim=-1))
 
 
-# ---------------------------------------------------------------------------
-# ICM wrapper
-# ---------------------------------------------------------------------------
 
+# ICM wrapper
 class ICM:
     """
     Wraps the three ICM sub-networks into a single object.
 
     Parameters
-    ----------
     state_dim   : dimensionality of the environment observation (8 for LunarLander)
     action_dim  : number of discrete actions (4 for LunarLander)
     feature_dim : size of the latent feature vector phi(s)
@@ -144,9 +141,7 @@ class ICM:
             lr=lr,
         )
 
-    # ------------------------------------------------------------------
     # Public API
-    # ------------------------------------------------------------------
 
     @torch.no_grad()
     def intrinsic_reward(

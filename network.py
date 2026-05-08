@@ -1,14 +1,14 @@
 """
 Q-Network for LunarLander.
 
-Simple MLP that maps an 8-dim state to Q-values over 4 discrete actions.
+MLP that maps an 8-dim state to Q-values over 4 discrete actions.
 """
 import torch
 import torch.nn as nn
 
 
 class QNetwork(nn.Module):
-    """Two-hidden-layer MLP. 64 units is sufficient for LunarLander."""
+    # Two-hidden-layer MLP
 
     def __init__(self, state_dim: int = 8, action_dim: int = 4, hidden: int = 64):
         super().__init__()
